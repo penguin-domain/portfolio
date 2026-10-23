@@ -2,166 +2,1180 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dhruv Talegaonkar | Cybersecurity</title>
-<meta name="description" content="Dhruv Talegaonkar: cybersecurity student and former EY intern. SOC, VAPT, Active Directory security, AI security, GRC.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#04090c">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2304090c'/%3E%3Ctext x='32' y='46' font-size='40' font-weight='800' text-anchor='middle' font-family='Arial,sans-serif' fill='%23e9b970'%3ED%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dhruv Talegaonkar | Cloud and AI security">
+<meta property="og:description" content="Cloud security and AI security student in Pune. ISO/IEC 27001 Lead Auditor, U.S. Department of State scholar. Projects, research and certifications.">
+<meta property="og:image" content="https://portfolio.dhruvtalegaonkar184.workers.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://portfolio.dhruvtalegaonkar184.workers.dev/og.png">
+<title>Dhruv Talegaonkar</title>
+<meta name="description" content="Dhruv Talegaonkar, cloud security and AI security in Pune. A scroll through the five layers of defence, his projects, research, experience and certifications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Hanken+Grotesk:wght@400;500;600&display=swap">
 <style>
-  :root{--bg:#0b0f14;--card:#121923;--text:#e6edf3;--muted:#8b98a9;--accent:#3ddc97;--line:#1f2a38}
-  *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-  a{color:var(--accent);text-decoration:none}
-  a:hover{text-decoration:underline}
-  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
-  nav{position:sticky;top:0;background:rgba(11,15,20,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
-  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
-  nav .logo{font-weight:700;font-family:ui-monospace,Menlo,Consolas,monospace}
-  nav ul{display:flex;gap:18px;list-style:none;font-size:14px}
-  header{padding:80px 0 50px}
-  .tag{font-family:ui-monospace,Menlo,Consolas,monospace;color:var(--accent);font-size:14px}
-  h1{font-size:clamp(34px,7vw,56px);line-height:1.1;margin:10px 0 16px}
-  .lead{color:var(--muted);max-width:640px;font-size:18px}
-  .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
-  .btn{padding:10px 18px;border-radius:8px;border:1px solid var(--accent);font-weight:600;font-size:15px}
-  .btn.primary{background:var(--accent);color:#04120b}
-  .btn:hover{text-decoration:none;opacity:.9}
-  section{padding:46px 0;border-top:1px solid var(--line)}
-  h2{font-size:24px;margin-bottom:22px}
-  h2::before{content:"# ";color:var(--accent);font-family:ui-monospace,Menlo,Consolas,monospace}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
-  .card h3{font-size:17px;margin-bottom:6px}
-  .card p,.card li{color:var(--muted);font-size:15px}
-  .card ul{padding-left:18px;margin-top:8px}
-  .meta{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:var(--accent);margin-bottom:6px}
-  .chips{display:flex;flex-wrap:wrap;gap:8px}
-  .chip{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px}
-  .item{margin-bottom:22px}
-  footer{padding:36px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px;text-align:center}
-  @media(max-width:560px){nav ul{gap:12px;font-size:13px}header{padding:56px 0 36px}}
+/* Concept: a credential passes through five layers of defence. Dark teal-black ground, brass and verdigris light, a holographic card as the one bold object. */
+:root{
+  --ink:#04090c;
+  --deep:#0a2a33;
+  --sea:#12505a;
+  --verdi:#41d9c3;
+  --sky:#7aa9ff;
+  --brass:#e9b970;
+  --ember:#ff7a45;
+  --bone:#ecebe3;
+  --mute:rgba(236,235,227,.64);
+  --line:rgba(236,235,227,.14);
+  --glass:rgba(8,20,26,.55);
+  --f-d:"Bricolage Grotesque","Arial Narrow",system-ui,sans-serif;
+  --f-b:"Hanken Grotesk","Helvetica Neue",system-ui,sans-serif;
+  --gl:max(16px, env(safe-area-inset-left, 0px));
+  --gr:max(16px, env(safe-area-inset-right, 0px));
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{background:var(--ink);scroll-behavior:auto}
+body{margin:0;background:var(--ink);color:var(--bone);font-family:var(--f-b);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:var(--brass);color:#1b1206}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px;border-radius:4px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+#gl{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:0}
+.flatbg{position:fixed;inset:0;z-index:0;background:radial-gradient(60% 50% at 70% 30%,rgba(18,80,90,.55),transparent 70%),radial-gradient(50% 40% at 20% 80%,rgba(233,185,112,.14),transparent 70%),var(--ink);display:none}
+.flat .flatbg{display:block}
+.flat #gl{display:none}
+#cut{position:fixed;inset:0;width:100%;height:100%;z-index:100;background:#04090c;display:none}
+.js #cut{display:block}
+.flat #cut{display:none}
+html.cut{overflow:hidden}
+main{position:relative;z-index:2}
+
+/* nav */
+.nav{position:fixed;z-index:20;top:0;left:0;right:0;padding:calc(18px + env(safe-area-inset-top,0px)) var(--gr) 0 var(--gl);display:flex;align-items:center;justify-content:space-between;gap:16px;pointer-events:none}
+.nav>*{pointer-events:auto}
+.logo{font-family:var(--f-d);font-weight:800;font-size:1.15rem;letter-spacing:-.01em;text-decoration:none}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:.9rem}
+.nav ul a{text-decoration:none;color:var(--mute);transition:color .25s}.nav ul a:hover{color:var(--bone)}
+.pill{display:inline-flex;align-items:center;gap:9px;font-size:.82rem;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:rgba(4,12,16,.5);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.pill i{width:7px;height:7px;border-radius:50%;background:var(--verdi);box-shadow:0 0 0 4px rgba(65,217,195,.18);animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 8px rgba(65,217,195,0)}}
+@media (max-width:1040px){.nav ul{display:none}}
+
+/* hero */
+#hero{height:190svh;position:relative}
+.stick{position:sticky;top:0;height:100svh;overflow:hidden}
+.hero-in{height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:0 var(--gr) clamp(48px,11vh,110px) var(--gl)}
+h1{margin:0;font-family:var(--f-d);font-weight:800;font-stretch:78%;font-variation-settings:"wdth" 78,"opsz" 96;font-size:clamp(3.2rem,10.4vw,10rem);line-height:.86;letter-spacing:-.035em}
+h1 .ln{display:block;overflow:hidden;padding-bottom:.08em}
+h1 .ch{display:inline-block;will-change:transform}
+.lede{margin:clamp(18px,3vh,30px) 0 0;max-width:30ch;font-size:clamp(1.1rem,2.1vw,1.5rem);line-height:1.35;font-weight:500}
+.facts{margin:18px 0 0;display:flex;flex-wrap:wrap;gap:6px 22px;color:var(--mute);font-size:.92rem}
+.cue{position:absolute;right:var(--gr);bottom:calc(30px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:12px;color:var(--mute);font-size:.82rem}
+.cue b{display:block;width:1px;height:46px;background:linear-gradient(var(--brass),transparent);transform-origin:top;animation:cue 2.4s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0)}50%{transform:scaleY(1)}100%{transform:scaleY(0);transform-origin:bottom}}
+@media (max-width:760px){.cue{display:none}}
+
+/* tunnel */
+#tunnel{height:880svh;position:relative}
+.rail{position:fixed;z-index:15;right:var(--gr);top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:14px;align-items:flex-end;opacity:0;pointer-events:none;transition:opacity .4s}
+.rail span{font-size:.78rem;color:var(--mute);display:flex;align-items:center;gap:10px;transition:color .3s}
+.rail span::after{content:"";width:18px;height:1px;background:currentColor;transition:width .3s}
+.rail span.on{color:var(--bone)}.rail span.on::after{width:42px;background:var(--brass)}
+@media (max-width:760px){.rail{display:none}#contact{padding-top:36svh}}
+.tl{display:none}
+.flat .tl{display:block}
+
+/* sections */
+.wrap{padding:0 var(--gr) 0 var(--gl)}
+h2{margin:0;font-family:var(--f-d);font-weight:800;font-stretch:80%;font-variation-settings:"wdth" 80,"opsz" 72;font-size:clamp(2.4rem,7vw,6rem);line-height:.92;letter-spacing:-.03em;text-wrap:balance}
+.sub{color:var(--mute);max-width:44ch;margin:18px 0 0}
+
+/* work reel */
+#work{height:460svh;position:relative}
+#work .stick{display:flex;flex-direction:column;justify-content:center;gap:clamp(22px,5vh,48px);perspective:1400px}
+.reelhead{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;padding:0 var(--gr) 0 var(--gl)}
+.bar{height:2px;width:min(180px,30vw);background:var(--line);position:relative;overflow:hidden;flex:none;margin-bottom:12px}
+.bar i{position:absolute;inset:0;background:var(--brass);transform-origin:left;transform:scaleX(0)}
+.track{display:flex;gap:clamp(16px,2.4vw,30px);padding-left:var(--gl);padding-right:12vw;will-change:transform;margin:0;list-style:none}
+.proj{flex:none;width:clamp(272px,40vw,520px);height:clamp(340px,52vh,470px);border-radius:22px;position:relative;overflow:hidden;border:1px solid var(--line);padding:clamp(20px,2.4vw,32px);display:flex;flex-direction:column;justify-content:flex-end;gap:10px;transform-style:preserve-3d;will-change:transform,opacity;isolation:isolate}
+.proj::before{content:"";position:absolute;inset:-20%;z-index:-2;background:var(--art);filter:saturate(1.15);transform:translate3d(var(--px,0px),0,0) scale(1.1)}
+.proj::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(4,9,12,0) 28%,rgba(4,9,12,.78) 78%)}
+.proj h3{margin:0;font-family:var(--f-d);font-weight:700;font-stretch:84%;font-variation-settings:"wdth" 84,"opsz" 48;font-size:clamp(1.7rem,3.2vw,2.5rem);line-height:1;letter-spacing:-.02em}
+.proj p{margin:0;color:rgba(236,235,227,.82);max-width:36ch;font-size:.98rem}
+.proj small{color:var(--brass);font-size:.82rem;font-weight:600}
+.a1{--art:radial-gradient(60% 55% at 25% 20%,#41d9c3 0,transparent 62%),radial-gradient(70% 60% at 85% 80%,#12505a 0,transparent 66%),radial-gradient(40% 40% at 70% 15%,#7aa9ff 0,transparent 70%),#07161b}
+.a2{--art:radial-gradient(60% 55% at 80% 20%,#e9b970 0,transparent 62%),radial-gradient(65% 60% at 15% 85%,#8a3d2a 0,transparent 68%),radial-gradient(45% 40% at 55% 55%,#3a2a4f 0,transparent 70%),#140d0b}
+.a3{--art:radial-gradient(55% 55% at 20% 75%,#7aa9ff 0,transparent 64%),radial-gradient(60% 50% at 85% 20%,#a78bfa 0,transparent 66%),radial-gradient(45% 45% at 60% 90%,#41d9c3 0,transparent 70%),#0a1022}
+.a4{--art:radial-gradient(60% 55% at 70% 80%,#ff7a45 0,transparent 62%),radial-gradient(60% 55% at 15% 20%,#e9b970 0,transparent 66%),radial-gradient(50% 45% at 40% 60%,#12505a 0,transparent 70%),#120c0a}
+
+
+/* about */
+#about,#research,#certs{padding:clamp(90px,16vh,170px) var(--gr) clamp(30px,6vh,70px) var(--gl);position:relative}
+.aboutgrid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(30px,6vw,90px);align-items:center}
+.lead{margin:26px 0 0;font-size:clamp(1.1rem,1.9vw,1.4rem);line-height:1.5;max-width:46ch;font-weight:500}
+.facts2{list-style:none;margin:34px 0 0;padding:0;display:grid;gap:0;max-width:56ch}
+.facts2 li{display:grid;grid-template-columns:minmax(88px,120px) minmax(0,1fr);gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+.facts2 li:last-child{border-bottom:1px solid var(--line)}
+.facts2 b{font-family:var(--f-d);font-weight:700;font-size:1.15rem;color:var(--brass)}
+.facts2 span{color:var(--mute)}
+.venn{margin:0;display:flex;justify-content:center}
+.venn svg{width:min(100%,460px);height:auto;overflow:visible;filter:drop-shadow(0 20px 60px rgba(65,217,195,.12))}
+@media (max-width:860px){.aboutgrid{grid-template-columns:minmax(0,1fr)}}
+
+/* research */
+.researchhead{display:flex;flex-direction:column;gap:6px;margin-bottom:clamp(30px,6vh,56px)}
+.flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;position:relative;margin-bottom:clamp(34px,7vh,70px)}
+.flow::before{content:"";position:absolute;left:4%;right:4%;top:28px;height:1px;background:linear-gradient(90deg,var(--verdi),var(--sky),var(--brass),var(--ember))}
+.node{position:relative;padding:58px 18px 0 0;display:flex;flex-direction:column;gap:6px}
+.node::before{content:"";position:absolute;left:0;top:20px;width:17px;height:17px;border-radius:50%;background:var(--ink);border:2px solid var(--brass);box-shadow:0 0 0 6px rgba(233,185,112,.12)}
+.node b{font-family:var(--f-d);font-weight:700;font-size:1.2rem}
+.node span{color:var(--mute);font-size:.95rem;max-width:26ch}
+.rcols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,4vw,56px)}
+.rcols article{border-top:1px solid var(--line);padding-top:22px}
+.rcols small{color:var(--brass);font-weight:600;font-size:.84rem}
+.rcols h3{margin:8px 0 10px;font-family:var(--f-d);font-weight:700;font-stretch:88%;font-variation-settings:"wdth" 88,"opsz" 40;font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.05;letter-spacing:-.015em}
+.rcols p{margin:0;color:var(--mute);max-width:52ch}
+@media (max-width:860px){.flow{grid-template-columns:minmax(0,1fr);gap:22px}.flow::before{left:8px;right:auto;top:20px;bottom:20px;width:1px;height:auto;background:linear-gradient(180deg,var(--verdi),var(--sky),var(--brass),var(--ember))}.node{padding:0 0 0 38px}.node::before{top:3px;left:0}.rcols{grid-template-columns:minmax(0,1fr)}}
+
+/* certifications */
+.certgrid{list-style:none;margin:clamp(28px,6vh,52px) 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(14px,2vw,24px)}
+.cert{position:relative;border-radius:18px;padding:26px 24px 28px;background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--line);overflow:hidden;min-height:220px;display:flex;flex-direction:column;gap:8px;isolation:isolate}
+.cert::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--g);opacity:.55}
+.cert small{color:var(--brass);font-weight:600;font-size:.84rem}
+.cert h3{margin:0;font-family:var(--f-d);font-weight:700;font-stretch:88%;font-variation-settings:"wdth" 88,"opsz" 36;font-size:clamp(1.3rem,2vw,1.7rem);line-height:1.08;letter-spacing:-.012em}
+.cert p{margin:auto 0 0;color:rgba(236,235,227,.74);font-size:.95rem}
+.c1{--g:radial-gradient(90% 70% at 100% 0,rgba(233,185,112,.5),transparent 70%)}
+.c2{--g:radial-gradient(90% 70% at 100% 0,rgba(255,122,69,.46),transparent 70%)}
+.c3{--g:radial-gradient(90% 70% at 100% 0,rgba(65,217,195,.42),transparent 70%)}
+.c4{--g:radial-gradient(90% 70% at 100% 0,rgba(122,169,255,.42),transparent 70%)}
+.c5{--g:radial-gradient(90% 70% at 100% 0,rgba(214,86,86,.40),transparent 70%)}
+.c6{--g:radial-gradient(90% 70% at 100% 0,rgba(140,210,120,.38),transparent 70%)}
+.cert .badge{width:96px;height:96px;margin:0 0 10px;filter:drop-shadow(0 8px 18px rgba(0,0,0,.45));font-family:var(--f-b)}
+
+/* path */
+#experience{padding:clamp(90px,16vh,170px) var(--gr) clamp(60px,10vh,120px) var(--gl);position:relative}
+.pathgrid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(30px,6vw,90px);align-items:start}
+.pathgrid h2{position:sticky;top:18vh}
+.steps{position:relative;padding-left:clamp(26px,4vw,50px);display:flex;flex-direction:column;gap:clamp(40px,9vh,90px)}
+.steps svg{position:absolute;left:0;top:6px;bottom:0;width:14px;height:calc(100% - 6px);overflow:visible}
+.step h3{margin:0 0 6px;font-family:var(--f-d);font-weight:700;font-stretch:88%;font-variation-settings:"wdth" 88,"opsz" 40;font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.05;letter-spacing:-.015em}
+.step small{display:block;color:var(--brass);font-weight:600;font-size:.84rem;margin-bottom:10px}
+.step p{margin:0;color:var(--mute);max-width:52ch}
+@media (max-width:860px){.pathgrid{grid-template-columns:minmax(0,1fr)}.pathgrid h2{position:static}}
+
+/* contact */
+#contact h2{max-width:14ch;font-size:clamp(2.3rem,5.6vw,5rem)}
+#contact{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:clamp(80px,14vh,140px) var(--gr) 36px var(--gl);position:relative}
+.mail{margin:28px 0 0;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.mail output{font-family:var(--f-d);font-weight:700;font-stretch:86%;font-variation-settings:"wdth" 86,"opsz" 40;font-size:clamp(1.15rem,3.6vw,2.2rem);letter-spacing:-.015em;overflow-wrap:anywhere}
+.btn{font-family:var(--f-b);font-weight:600;font-size:.92rem;padding:13px 20px;border-radius:999px;border:1px solid var(--brass);background:var(--brass);color:#1b1206;cursor:pointer;transition:transform .25s,background .25s,color .25s}
+.btn:hover{transform:translateY(-2px);background:transparent;color:var(--brass)}
+.links{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:30px;font-size:1rem}
+.links a{text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:3px;transition:border-color .25s,color .25s}.links a:hover{color:var(--brass);border-color:var(--brass)}
+.foot{margin-top:clamp(60px,12vh,120px);color:var(--mute);font-size:.84rem}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);background:var(--bone);color:#10161a;font-size:.86rem;font-weight:600;padding:10px 16px;border-radius:999px;opacity:0;transition:.3s;z-index:40;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* reveals (JS only; content is visible when JS is absent) */
+.js [data-rv]{opacity:0;transform:translate3d(0,26px,0);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.js [data-rv].in{opacity:1;transform:none}
+.flat [data-rv]{opacity:1!important;transform:none!important}
+
+/* flat mode (no WebGL or reduced motion) */
+.flat #hero,.flat #work,.flat #tunnel{height:auto}
+.flat .stick{position:static;height:auto;overflow:visible}
+.flat .hero-in{min-height:100svh;padding-top:120px}
+.flat #tunnel{padding:60px var(--gr) 60px var(--gl)}
+.flat .tl{display:grid;gap:30px;max-width:60ch}
+.flat .tl h3{margin:0;font-family:var(--f-d);font-size:2rem}
+.flat .tl p{margin:6px 0 0;color:var(--mute)}
+.flat .track{flex-wrap:wrap;padding-right:var(--gr)}
+.flat .proj{width:min(100%,520px)}
+.flat .cue,.flat .rail{display:none}
 </style>
 </head>
 <body>
 
-<nav>
-  <div class="wrap">
-    <span class="logo">dhruv@portfolio:~$</span>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
 
-<header>
-  <div class="wrap">
-    <p class="tag">cybersecurity | SOC | VAPT | AI security</p>
-    <h1>Dhruv Talegaonkar</h1>
-    <p class="lead">Final-year B.E. Information Technology student in Pune. I spent a year at EY working on SOC operations, vulnerability assessment and penetration testing, and Active Directory security, and I research AI and deepfake identity threats.</p>
-    <div class="btns">
-      <a class="btn primary" href="#contact">Get in touch</a>
-      <a class="btn" href="https://github.com/penguin-domain">GitHub</a>
-      <a class="btn" href="https://linkedin.com/in/dhruv-talegaonkar-455a27259">LinkedIn</a>
-    </div>
-  </div>
+<div class="flatbg" aria-hidden="true"></div>
+<canvas id="gl" aria-hidden="true"></canvas>
+<canvas id="cut" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <a class="logo" href="#hero" aria-label="Dhruv Talegaonkar, top of page">D.T</a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certs">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <span class="pill"><i></i>Open to internships</span>
 </header>
 
-<section id="about">
-  <div class="wrap">
-    <h2>About</h2>
-    <p>I am a B.E. Information Technology student at PCET NMIET (Savitribai Phule Pune University), graduating in 2027. I am an ISO 27001 Lead Auditor, and I also completed a one-year Cyber Security program at Northern Virginia Community College as a U.S. Department of State CCI Exchange Program Scholar (GPA 3.89/4.00).</p>
-    <p style="margin-top:12px">My work covers detection and response, offensive testing, cloud security and DevSecOps, and governance, risk and compliance. I am looking for paid internships and research opportunities in cybersecurity, cloud security and AI security.</p>
-  </div>
-</section>
+<aside class="rail" id="rail" aria-hidden="true">
+  <span>Identity</span><span>Detect</span><span>Break</span><span>Govern</span><span>AI</span>
+</aside>
 
-<section id="experience">
-  <div class="wrap">
-    <h2>Experience</h2>
-    <div class="card item">
-      <div class="meta">Jun 2025 - Jun 2026</div>
-      <h3>Cybersecurity Intern, Ernst &amp; Young (EY)</h3>
-      <ul>
-        <li>SOC operations: monitoring, triage and incident response</li>
-        <li>Vulnerability assessment and penetration testing (VAPT)</li>
-        <li>Active Directory security</li>
-        <li>Research on AI and deepfake identity threats</li>
-      </ul>
-    </div>
-    <div class="card item">
-      <div class="meta">1 year</div>
-      <h3>Cyber Security Program, Northern Virginia Community College</h3>
-      <ul>
-        <li>U.S. Department of State CCI Exchange Program Scholar</li>
-        <li>GPA 3.89 / 4.00</li>
-      </ul>
-    </div>
-    <div class="card">
-      <div class="meta">Certification</div>
-      <h3>ISO 27001 Lead Auditor</h3>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="wrap">
-    <h2>Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="meta">Featured</div>
-        <h3>serverless-soar</h3>
-        <p>Serverless security orchestration, automation and response project.</p>
-        <p style="margin-top:10px"><a href="https://github.com/penguin-domain">View on GitHub</a></p>
+<main>
+  <section id="hero" aria-label="Introduction">
+    <div class="stick">
+      <div class="hero-in">
+        <h1 aria-label="Dhruv Talegaonkar"><span class="ln" aria-hidden="true">Dhruv</span><span class="ln" aria-hidden="true">Talegaonkar</span></h1>
+        <p class="lede" data-rv>I secure cloud systems, and the AI running inside them.</p>
+        <p class="facts" data-rv><span>Cloud security and AI security</span><span>ISO/IEC 27001 Lead Auditor</span><span>U.S. Department of State Scholar</span><span>Final-year B.E. IT, Pune</span></p>
       </div>
-      <div class="card">
-        <div class="meta">Research</div>
-        <h3>Crime Forecasting</h3>
-        <p>Comparison of ARIMA, LSTM and a baseline model on Chicago crime data.</p>
+      <div class="cue" aria-hidden="true"><b></b>Scroll</div>
+    </div>
+  </section>
+
+  <section id="tunnel" aria-label="Five layers of defence">
+    <div class="tl">
+      <div><h3>Identity</h3><p>Active Directory is where attackers aim first. I harden who gets in and what each account can reach.</p></div>
+      <div><h3>Detect</h3><p>SOC operations at EY, and Serverless SOAR, which turns Wazuh alerts into readable Slack triage.</p></div>
+      <div><h3>Break</h3><p>Vulnerability assessment and penetration testing: finding the weakness before someone else does.</p></div>
+      <div><h3>Govern</h3><p>ISO/IEC 27001 Lead Auditor. Controls mapped across ISO 27001, PCI DSS and DPDP.</p></div>
+      <div><h3>AI</h3><p>Deepfake and identity threat research, and Agent File Monitor, a tool I am building to log every file a coding agent touches.</p></div>
+    </div>
+  </section>
+
+
+  <section id="about" aria-labelledby="about-t">
+    <div class="aboutgrid">
+      <div>
+        <h2 id="about-t" data-rv>Cloud security meets AI security.</h2>
+        <p class="lead" data-rv>I am a final-year B.E. Information Technology student in Pune. I spent a year in Virginia as a U.S. Department of State CCI Exchange Program scholar, then a year at EY working on SOC operations, penetration testing and Active Directory security.</p>
+        <p class="sub" data-rv>My focus is how cloud systems get misconfigured and how AI models and agents get abused. I want to build the controls that catch both, and to audit them against the standards that matter.</p>
+        <ul class="facts2" data-rv>
+          <li><b>Scholar</b><span>U.S. Department of State CCI Exchange Program, Northern Virginia Community College, GPA 3.89 out of 4.00</span></li>
+          <li><b>Researcher</b><span>Crime forecasting for my final-year project, and identity threats from deepfakes and AI at EY</span></li>
+          <li><b>Auditor</b><span>ISO/IEC 27001 Lead Auditor</span></li>
+          <li><b>Exploring</b><span>AI product management, turning security and AI projects into products people use</span></li>
+        </ul>
       </div>
-      <div class="card">
-        <div class="meta">In progress</div>
-        <h3>AI Agent File Monitor</h3>
-        <p>Logs which files AI coding agents touch and alerts on out-of-scope access.</p>
+      <figure class="venn" data-rv>
+        <svg viewBox="0 0 420 340" role="img" aria-label="Two overlapping circles, cloud and AI, with security where they meet.">
+          <defs>
+            <linearGradient id="vg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#41d9c3"/><stop offset="1" stop-color="#7aa9ff"/></linearGradient>
+            <linearGradient id="vg2" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff7a45"/><stop offset="1" stop-color="#e9b970"/></linearGradient>
+            <radialGradient id="vgl" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#fff2cf" stop-opacity=".95"/><stop offset="1" stop-color="#e9b970" stop-opacity="0"/></radialGradient>
+          </defs>
+          <circle cx="155" cy="170" r="118" fill="url(#vg1)" fill-opacity=".16" stroke="url(#vg1)" stroke-width="2"/>
+          <circle cx="265" cy="170" r="118" fill="url(#vg2)" fill-opacity=".16" stroke="url(#vg2)" stroke-width="2"/>
+          <ellipse cx="210" cy="170" rx="46" ry="104" fill="url(#vgl)" opacity=".9"/>
+          <text x="104" y="176" fill="#ecebe3" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="30" text-anchor="middle">Cloud</text>
+          <text x="316" y="176" fill="#ecebe3" font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="30" text-anchor="middle">AI</text>
+          <text x="210" y="168" fill="#1b1206" font-family="Hanken Grotesk, sans-serif" font-weight="600" font-size="13" text-anchor="middle">Where I</text>
+          <text x="210" y="186" fill="#1b1206" font-family="Hanken Grotesk, sans-serif" font-weight="600" font-size="13" text-anchor="middle">work</text>
+        </svg>
+      </figure>
+    </div>
+  </section>
+
+  <section id="work" aria-labelledby="work-t">
+    <div class="stick">
+      <div class="reelhead">
+        <div>
+          <h2 id="work-t">Things I built</h2>
+          <p class="sub">Four projects, from alert triage to compliance mapping. The repositories are being rebuilt on GitHub.</p>
+        </div>
+        <div class="bar" aria-hidden="true"><i id="wbar"></i></div>
+      </div>
+      <ol class="track" id="track">
+        <li class="proj a1"><small>Oct 2026</small><h3>Serverless SOAR</h3><p>Wazuh alerts travel through EventBridge and Lambda and land in Slack as readable triage.</p></li>
+        <li class="proj a2"><small>In progress</small><h3>AutoGRC</h3><p>Being built on AWS: it will check policy documents against ISO 27001 controls with retrieval and a foundation model, and cite the evidence behind each verdict.</p></li>
+        <li class="proj a3"><small>In progress</small><h3>Agent File Monitor</h3><p>Being built: it will log every file an AI coding agent touches and flag access outside its scope.</p></li>
+        <li class="proj a4"><small>Final-year project</small><h3>CrimeVision AI</h3><p>Crime forecasting that compares ARIMA, LSTM and a plain baseline on real incident data.</p></li>
+      </ol>
+    </div>
+  </section>
+
+
+  <section id="research" aria-labelledby="research-t">
+    <div class="researchhead">
+      <h2 id="research-t" data-rv>Research.</h2>
+      <p class="sub" data-rv>Two lines of work. One forecasts crime on real data, the other looks at how AI changes identity attacks.</p>
+    </div>
+    <div class="flow" data-rv>
+      <div class="node"><b>Data</b><span>NCRB records for Maharashtra, cleaned by district and month</span></div>
+      <div class="node"><b>Baseline</b><span>A simple benchmark every model must beat</span></div>
+      <div class="node"><b>ARIMA and LSTM</b><span>Statistical and deep models, compared in tiers</span></div>
+      <div class="node"><b>CrimeVision AI</b><span>A district heatmap with citizen reporting that reaches a police dashboard</span></div>
+    </div>
+    <div class="rcols">
+      <article data-rv>
+        <small>Final-year project · in progress</small>
+        <h3>Tiered crime forecasting</h3>
+        <p>Extends Natarajan et al. (2024) by testing a baseline, ARIMA and an LSTM side by side on Maharashtra data. The IEEE paper comes first. CrimeVision AI is then built on the same data, so the paper's results are the app's results.</p>
+      </article>
+      <article data-rv>
+        <small>Ernst &amp; Young · 2025 to 2026</small>
+        <h3>AI and deepfake identity threats</h3>
+        <p>Researched how synthetic voices and faces defeat identity checks, and which controls still hold. This sits next to my Active Directory work, since identity is the layer attackers cross first.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience" aria-labelledby="path-t">
+    <div class="pathgrid">
+      <h2 id="path-t" data-rv>Experience and education.</h2>
+      <div class="steps" id="steps">
+        <svg viewBox="0 0 14 100" preserveAspectRatio="none" aria-hidden="true"><line x1="7" y1="0" x2="7" y2="100" stroke="rgba(236,235,227,.14)" stroke-width="1.5" vector-effect="non-scaling-stroke"/><line id="pline" x1="7" y1="0" x2="7" y2="100" stroke="#e9b970" stroke-width="2" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" vector-effect="non-scaling-stroke"/></svg>
+        <article class="step" data-rv><small>Jun 2025 to Jun 2026 · Mumbai</small><h3>Cybersecurity intern, Ernst &amp; Young</h3><p>Ran SOC operations, carried out vulnerability assessment and penetration testing, and worked on Active Directory security. Researched AI and deepfake identity threats.</p></article>
+        <article class="step" data-rv><small>One year · Virginia, USA</small><h3>CCI Exchange Program scholar, Northern Virginia Community College</h3><p>Cyber Security program funded by the U.S. Department of State. GPA 3.89 out of 4.00.</p></article>
+        <article class="step" data-rv><small>Graduating 2027 · Pune</small><h3>B.E. Information Technology</h3><p>PCET NMIET, Savitribai Phule Pune University. Final year.</p></article>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="skills">
-  <div class="wrap">
-    <h2>Skills</h2>
-    <div class="chips">
-      <span class="chip">SOC operations</span>
-      <span class="chip">Incident response</span>
-      <span class="chip">VAPT</span>
-      <span class="chip">Active Directory security</span>
-      <span class="chip">AI security</span>
-      <span class="chip">Cloud security</span>
-      <span class="chip">DevSecOps</span>
-      <span class="chip">GRC and compliance</span>
-      <span class="chip">ISO 27001</span>
+
+  <section id="certs" aria-labelledby="certs-t">
+    <h2 id="certs-t" data-rv>Certifications.</h2>
+    <ul class="certgrid">
+      <li class="cert c1" data-rv>
+        <svg class="badge" viewBox="0 0 96 96" aria-hidden="true"><defs><linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a2014"/><stop offset="1" stop-color="#0a0d0f"/></linearGradient><linearGradient id="br1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6e2b4"/><stop offset=".5" stop-color="#d6ac66"/><stop offset="1" stop-color="#8d6a33"/></linearGradient></defs>
+          <polygon points="9.9,26 48,4 86.1,26 86.1,70 48,92 9.9,70" fill="url(#bg1)" stroke="url(#br1)" stroke-width="3" stroke-linejoin="round"/><polygon points="14,28 48,9 82,28 82,68 48,87 14,68" fill="none" stroke="rgba(233,185,112,.35)" stroke-width="1"/>
+          <path d="M48 24 L64 30 V47 C64 57 57 63 48 67 C39 63 32 57 32 47 V30 Z" fill="none" stroke="url(#br1)" stroke-width="2.4" stroke-linejoin="round"/><path d="M40.5 46 L46 51.5 L56.5 39.5" fill="none" stroke="#f6e2b4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <small>Auditing</small><h3>ISO/IEC 27001 Lead Auditor</h3><p>Issued by Mastermind Assurance. Lead auditor of information security management systems.</p></li>
+      <li class="cert c2" data-rv>
+        <svg class="badge" viewBox="0 0 96 96" aria-hidden="true"><defs><linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2b1a14"/><stop offset="1" stop-color="#0a0d0f"/></linearGradient></defs>
+          <polygon points="9.9,26 48,4 86.1,26 86.1,70 48,92 9.9,70" fill="url(#bg2)" stroke="#ff7a45" stroke-width="3" stroke-linejoin="round"/><polygon points="14,28 48,9 82,28 82,68 48,87 14,68" fill="none" stroke="rgba(255,122,69,.35)" stroke-width="1"/>
+          <g stroke="#ff9a6b" stroke-width="1.6" stroke-linecap="round"><path d="M48 46 L48 31 M48 46 L61 38.5 M48 46 L61 53.5 M48 46 L48 61 M48 46 L35 53.5 M48 46 L35 38.5"/></g>
+          <g fill="#ffd2bd"><circle cx="48" cy="46" r="5"/><circle cx="48" cy="29.5" r="2.6"/><circle cx="62.4" cy="37.7" r="2.6"/><circle cx="62.4" cy="54.3" r="2.6"/><circle cx="48" cy="62.5" r="2.6"/><circle cx="33.6" cy="54.3" r="2.6"/><circle cx="33.6" cy="37.7" r="2.6"/></g></svg>
+        <small>Cloud and AI</small><h3>AWS Certified AI Practitioner</h3><p>AIF-C01, Amazon Web Services.</p></li>
+      <li class="cert c3" data-rv>
+        <svg class="badge" viewBox="0 0 96 96" aria-hidden="true"><defs><linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d2a2e"/><stop offset="1" stop-color="#070d10"/></linearGradient></defs>
+          <circle cx="48" cy="48" r="43" fill="url(#bg3)" stroke="#41d9c3" stroke-width="3"/><circle cx="48" cy="48" r="35" fill="none" stroke="rgba(65,217,195,.35)" stroke-width="1" stroke-dasharray="2 3"/>
+          <path d="M48 27 L52.7 41 L67.5 41.2 L55.6 50 L60.1 64.1 L48 55.6 L35.9 64.1 L40.4 50 L28.5 41.2 L43.3 41 Z" fill="#bff5ec" stroke="#41d9c3" stroke-width="1.4" stroke-linejoin="round"/></svg>
+        <small>Scholarship</small><h3>U.S. Department of State CCI Exchange Program</h3><p>Cyber Security program at Northern Virginia Community College.</p></li>
+      <li class="cert c4" data-rv>
+        <svg class="badge" viewBox="0 0 96 96" aria-hidden="true"><defs><linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14233f"/><stop offset="1" stop-color="#070b12"/></linearGradient></defs>
+          <path d="M48 5 L83 17 V48 C83 68 68 82 48 91 C28 82 13 68 13 48 V17 Z" fill="url(#bg4)" stroke="#7aa9ff" stroke-width="3" stroke-linejoin="round"/><path d="M48 12 L77 22 V48 C77 64 65 76 48 84 C31 76 19 64 19 48 V22 Z" fill="none" stroke="rgba(122,169,255,.35)" stroke-width="1"/>
+          <g stroke="#9bbcff" stroke-width="1.6" stroke-linecap="round"><path d="M36 40 L60 40 M36 40 L48 56 M60 40 L48 56 M48 29 L36 40 M48 29 L60 40"/></g><g fill="#dbe7ff"><circle cx="48" cy="29" r="3"/><circle cx="36" cy="40" r="3"/><circle cx="60" cy="40" r="3"/><circle cx="48" cy="56" r="3"/></g>
+          <text x="48" y="73" text-anchor="middle" font-size="9" font-weight="800" fill="#dbe7ff" letter-spacing="1">CNSP</text></svg>
+        <small>Network security</small><h3>CNSP, Certified Network Security Practitioner</h3><p>Issued by The SecOps Group.</p></li>
+
+      <li class="cert c5" data-rv>
+        <svg class="badge" viewBox="0 0 96 96" aria-hidden="true"><defs><linearGradient id="bg5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a1618"/><stop offset="1" stop-color="#0a0d0f"/></linearGradient></defs>
+          <path d="M34 62 L26 90 L40 82 L48 92 L52 66 Z" fill="#7b1f24"/><path d="M62 62 L70 90 L56 82 L48 92 L44 66 Z" fill="#a32a31"/>
+          <circle cx="48" cy="40" r="32" fill="url(#bg5)" stroke="#e46a6a" stroke-width="3"/><circle cx="48" cy="40" r="25" fill="none" stroke="rgba(228,106,106,.4)" stroke-width="1"/>
+          <path d="M34 48 L44 38 L52 44 L64 30" fill="none" stroke="#ffd0d0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><g fill="#ffd0d0"><circle cx="34" cy="48" r="2.6"/><circle cx="44" cy="38" r="2.6"/><circle cx="52" cy="44" r="2.6"/><circle cx="64" cy="30" r="2.6"/></g></svg>
+        <small>Problem solving</small><h3>Workplace Development: Problem Solving and Data Analysis</h3><p>American Management Association, through NVCC. October 20, 2024.</p></li> 
+      <li class="cert c6" data-rv>
+        <svg class="badge" viewBox="0 0 96 96" aria-hidden="true"><defs><linearGradient id="bg6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#16301c"/><stop offset="1" stop-color="#070d0a"/></linearGradient></defs>
+          <polygon points="48,4 82,18 82,56 48,92 14,56 14,18" fill="url(#bg6)" stroke="#8cd278" stroke-width="3" stroke-linejoin="round"/><polygon points="48,11 76,22 76,53 48,84 20,53 20,22" fill="none" stroke="rgba(140,210,120,.35)" stroke-width="1"/>
+          <rect x="37" y="40" width="22" height="17" rx="3" fill="#d6f5cc"/><path d="M41.5 40 V35 a6.5 6.5 0 0 1 13 0 V40" fill="none" stroke="#d6f5cc" stroke-width="3"/><circle cx="48" cy="48" r="2.4" fill="#16301c"/></svg>
+        <small>Foundations</small><h3>Google Cybersecurity Professional Certificate</h3><p>Issued through Coursera.</p></li>   </ul>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-t">
+    <h2 id="contact-t" data-rv>Looking for a paid internship in cloud and AI security.</h2>
+    <p class="sub" data-rv>Cloud security, AI security or research collaboration. Pune, Mumbai or remote.</p>
+    <div class="mail" data-rv>
+      <output id="email">dhruvtalegaonkar1@gmail.com</output>
+      <button class="btn" id="copy" type="button">Copy email</button>
     </div>
-  </div>
-</section>
+    <nav class="links" aria-label="Profiles" data-rv>
+      <a href="https://www.linkedin.com/in/dhruv-talegaonkar-455a27259" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/penguin-domain" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://app.letsdefend.io/user/cipher.0" target="_blank" rel="noopener">LetsDefend</a>
+    </nav>
+    <p class="foot">© 2026 Dhruv Talegaonkar, Pune, India</p>
+  </section>
+</main>
+<div class="toast" id="toast" role="status">Email copied</div>
 
-<section id="contact">
-  <div class="wrap">
-    <h2>Contact</h2>
-    <p>Open to internships, research roles and collaboration.</p>
-    <div class="btns">
-      <a class="btn primary" href="mailto:dhruvtalegaonkar1@gmail.com">dhruvtalegaonkar1@gmail.com</a>
-      <a class="btn" href="https://linkedin.com/in/dhruv-talegaonkar-455a27259">LinkedIn</a>
-      <a class="btn" href="https://github.com/penguin-domain">GitHub</a>
-      <a class="btn" href="https://app.letsdefend.io/user/cipher.0">LetsDefend</a>
-    </div>
-  </div>
-</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script>
+(function(){
+  'use strict';
+  var D = document, root = D.documentElement;
+  root.classList.add('js');
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var cl = function(v, a, b){ return Math.min(b, Math.max(a, v)); };
+  var lerp = function(a, b, t){ return a + (b - a) * t; };
+  var rng = function(v, a, b){ return cl((v - a) / (b - a), 0, 1); };
+  var ease = function(x){ x = cl(x, 0, 1); return x * x * x * (x * (x * 6 - 15) + 10); };
+  var easeOut = function(x){ return 1 - Math.pow(1 - cl(x, 0, 1), 3); };
 
-<footer>
-  <div class="wrap">&copy; 2026 Dhruv Talegaonkar</div>
-</footer>
+  /* ---------- page furniture that works with or without WebGL ---------- */
+  var toast = D.getElementById('toast');
+  D.getElementById('copy').addEventListener('click', function(){
+    var t = D.getElementById('email').textContent;
+    var done = function(){ toast.classList.add('on'); setTimeout(function(){ toast.classList.remove('on'); }, 1800); };
+    try { navigator.clipboard.writeText(t).then(done, function(){ sel(); }); } catch(e){ sel(); }
+    function sel(){ var r = D.createRange(); r.selectNodeContents(D.getElementById('email')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+  });
+  var h1 = D.querySelectorAll('h1 .ln');
+  h1.forEach(function(ln){
+    var txt = ln.textContent; ln.textContent = '';
+    txt.split('').forEach(function(c){ var s = D.createElement('span'); s.className = 'ch'; s.textContent = c; ln.appendChild(s); });
+  });
+
+  var hasGL = (function(){ try { var c = D.createElement('canvas'); return !!(window.WebGLRenderingContext && (c.getContext('webgl') || c.getContext('experimental-webgl'))); } catch(e){ return false; } })();
+  var flat = reduce || !hasGL || !window.THREE || !window.gsap;
+  if (flat){ root.classList.add('flat'); var ce0 = D.getElementById('cut'); if (ce0) ce0.remove(); return; }
+  setTimeout(function(){ var ce = D.getElementById('cut'); if (ce && cutBusy && !cutLive){ ce.style.display = 'none'; root.classList.remove('cut'); } }, 16000);
+
+  gsap.registerPlugin(ScrollTrigger);
+  var lenis = null;
+  if (window.Lenis){
+    try {
+      lenis = new Lenis({ lerp: 0.085, smoothWheel: true });
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add(function(t){ lenis.raf(t * 1000); });
+      gsap.ticker.lagSmoothing(0);
+    } catch(e){ lenis = null; }
+  }
+  D.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      var id = a.getAttribute('href'); var el = D.querySelector(id); if (!el) return;
+      e.preventDefault();
+      var y = el.getBoundingClientRect().top + scrollY - (id === '#hero' ? 0 : 0);
+      if (lenis) lenis.scrollTo(id === '#hero' ? 0 : el, { duration: 1.8 }); else scrollTo({ top: y, behavior: 'smooth' });
+    });
+  });
+  D.querySelectorAll('[data-rv]').forEach(function(el){
+    ScrollTrigger.create({ trigger: el, start: 'top 90%', once: true, onEnter: function(){ el.classList.add('in'); } });
+  });
+
+  /* ---------- scene ---------- */
+  var canvas = D.getElementById('gl');
+  var R = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, powerPreference: 'high-performance' });
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  R.setPixelRatio(dpr); R.setClearColor(0x04090c, 1);
+  var scene = new THREE.Scene();
+  var cam = new THREE.PerspectiveCamera(50, 1, 0.1, 140);
+  var PORT = false;
+
+  var COL = { verdi: '#41d9c3', sky: '#7aa9ff', violet: '#b39bff', brass: '#e9b970', ember: '#ff7a45' };
+  var LAYERS = [
+    { name: 'Identity', col: COL.verdi, text: 'Active Directory is where attackers aim first. I harden who gets in and what each account can reach.' },
+    { name: 'Detect', col: COL.sky, text: 'SOC operations at EY, and Serverless SOAR, which turns Wazuh alerts into readable Slack triage.' },
+    { name: 'Break', col: COL.violet, text: 'Vulnerability assessment and penetration testing: finding the weakness before someone else does.' },
+    { name: 'Govern', col: COL.brass, text: 'ISO/IEC 27001 Lead Auditor. Controls mapped across ISO 27001, PCI DSS and DPDP.' },
+    { name: 'AI', col: COL.ember, text: 'Deepfake and identity threat research, and Agent File Monitor, a tool I am building to log every file a coding agent touches.' }
+  ];
+  var LZ = [-3, -12, -21, -30, -39];       /* where each layer sits along the tunnel */
+
+  /* background: flowing teal-black gradient that turns warm as you descend */
+  var bgMat = new THREE.ShaderMaterial({
+    depthTest: false, depthWrite: false,
+    uniforms: { uT: { value: 0 }, uAsp: { value: 1 }, uWarm: { value: 0 }, uM: { value: new THREE.Vector2(0, 0) } },
+    vertexShader: 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = vec4(position.xy, 0.0, 1.0); }',
+    fragmentShader: [
+      'precision highp float; varying vec2 vUv; uniform float uT, uAsp, uWarm; uniform vec2 uM;',
+      'float h(vec2 p){ return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }',
+      'float n(vec2 p){ vec2 i = floor(p), f = fract(p); f = f*f*(3.0-2.0*f); return mix(mix(h(i), h(i+vec2(1,0)), f.x), mix(h(i+vec2(0,1)), h(i+vec2(1,1)), f.x), f.y); }',
+      'float fbm(vec2 p){ float s = 0.0, a = 0.5; for (int i = 0; i < 5; i++){ s += a * n(p); p = p * 2.03 + 7.1; a *= 0.5; } return s; }',
+      'void main(){',
+      '  vec2 p = (vUv - 0.5) * vec2(uAsp, 1.0);',
+      '  float t = uT * 0.045;',
+      '  vec2 q = vec2(fbm(p * 1.25 + t), fbm(p * 1.25 + vec2(5.2, 1.3) - t));',
+      '  float f = fbm(p * 1.05 + q * 1.9 + t * 0.6);',
+      '  vec3 ink = vec3(0.016, 0.035, 0.047), deep = vec3(0.04, 0.165, 0.2), sea = vec3(0.07, 0.31, 0.35);',
+      '  vec3 verdi = vec3(0.25, 0.85, 0.76), brass = vec3(0.91, 0.725, 0.44), ember = vec3(1.0, 0.48, 0.27), sky = vec3(0.48, 0.66, 1.0);',
+      '  vec3 c = mix(ink, deep, smoothstep(0.18, 0.78, f));',
+      '  c = mix(c, sea, smoothstep(0.55, 0.95, f) * 0.5);',
+      '  vec3 coolL = mix(verdi, sky, smoothstep(0.0, 0.5, uWarm));',
+      '  vec3 warmL = mix(brass, ember, smoothstep(0.55, 1.0, uWarm));',
+      '  vec3 L = mix(coolL, warmL, smoothstep(0.35, 0.95, uWarm));',
+      '  c += L * pow(max(0.0, 1.0 - length(p - vec2(0.32, 0.1) - (q - 0.5) * 0.35 + uM * 0.04)), 3.2) * 0.26;',
+      '  c += mix(sky, brass, uWarm) * pow(max(0.0, 1.0 - length(p + vec2(0.42, 0.3) + (q - 0.5) * 0.2)), 4.0) * 0.14;',
+      '  c *= mix(0.72, 1.0, smoothstep(1.15, 0.2, length(p)));',
+      '  c += (h(vUv * 900.0 + fract(uT)) - 0.5) * 0.028;',
+      '  gl_FragColor = vec4(c, 1.0);',
+      '}'
+    ].join('\n')
+  });
+  var bg = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), bgMat); bg.frustumCulled = false; bg.renderOrder = -10; scene.add(bg);
+
+  /* particles: cipher dust along the tunnel */
+  var PN = innerWidth < 700 ? 700 : 1500, pPos = new Float32Array(PN * 3), pCol = new Float32Array(PN * 3), pSz = new Float32Array(PN);
+  var cc = [new THREE.Color(COL.verdi), new THREE.Color(COL.brass), new THREE.Color(COL.sky), new THREE.Color('#ffffff')];
+  for (var i = 0; i < PN; i++){
+    pPos[i * 3] = (Math.random() - 0.5) * 30; pPos[i * 3 + 1] = (Math.random() - 0.5) * 18; pPos[i * 3 + 2] = 12 - Math.random() * 66;
+    var c = cc[Math.floor(Math.random() * cc.length)]; pCol[i * 3] = c.r; pCol[i * 3 + 1] = c.g; pCol[i * 3 + 2] = c.b; pSz[i] = 0.6 + Math.random() * 2.2;
+  }
+  var pg = new THREE.BufferGeometry();
+  pg.setAttribute('position', new THREE.BufferAttribute(pPos, 3)); pg.setAttribute('aC', new THREE.BufferAttribute(pCol, 3)); pg.setAttribute('aS', new THREE.BufferAttribute(pSz, 1));
+  var pMat = new THREE.ShaderMaterial({
+    transparent: true, depthWrite: false, blending: THREE.AdditiveBlending,
+    uniforms: { uT: { value: 0 }, uPR: { value: dpr } },
+    vertexShader: 'attribute vec3 aC; attribute float aS; uniform float uT, uPR; varying vec3 vC; varying float vA; void main(){ vec3 p = position; p.y += sin(uT * 0.4 + p.x * 0.6 + p.z) * 0.18; vec4 mv = modelViewMatrix * vec4(p, 1.0); gl_Position = projectionMatrix * mv; gl_PointSize = aS * uPR * (26.0 / max(0.5, -mv.z)); vC = aC; vA = smoothstep(46.0, 5.0, -mv.z) * smoothstep(0.4, 2.5, -mv.z) * (0.55 + 0.45 * sin(uT * 1.3 + p.x * 3.0)); }',
+    fragmentShader: 'precision mediump float; varying vec3 vC; varying float vA; void main(){ float d = length(gl_PointCoord - 0.5); float a = smoothstep(0.5, 0.0, d) * vA; gl_FragColor = vec4(vC * a, a); }'
+  });
+  var dust = new THREE.Points(pg, pMat); dust.frustumCulled = false; scene.add(dust);
+
+  /* canvas helpers */
+  function mk(w, h, fn){ var c = D.createElement('canvas'); c.width = w; c.height = h; var g = c.getContext('2d'); fn(g, w, h); return c; }
+  function ctex(c){ var t = new THREE.CanvasTexture(c); t.anisotropy = R.capabilities.getMaxAnisotropy(); t.minFilter = THREE.LinearMipmapLinearFilter; t.needsUpdate = true; return t; }
+  function wrap(g, text, x, y, maxW, lh){
+    var words = text.split(' '), line = '', yy = y;
+    words.forEach(function(w){ var test = line ? line + ' ' + w : w; if (g.measureText(test).width > maxW && line){ g.fillText(line, x, yy); line = w; yy += lh; } else line = test; });
+    g.fillText(line, x, yy); return yy;
+  }
+
+  /* layers of defence */
+  var layerMeshes = [];
+  var layerVert = 'varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0); }';
+  var layerFrag = [
+    'precision highp float; varying vec2 vUv; uniform sampler2D uTex; uniform vec3 uCol; uniform float uFlash, uFade, uT, uW, uH;',
+    'void main(){',
+    '  vec2 sz = vec2(uW, uH);',
+    '  vec2 u = vUv * sz;',
+    '  float d = min(min(u.x, sz.x - u.x), min(u.y, sz.y - u.y));',
+    '  float edge = 1.0 - smoothstep(0.0, 0.035, abs(d - 0.32));',
+    '  float glow = exp(-abs(d - 0.32) * 4.5) * 0.4;',
+    '  vec2 g = abs(fract(u * 2.0) - 0.5);',
+    '  float grid = (1.0 - smoothstep(0.0, 0.025, min(g.x, g.y))) * 0.06;',
+    '  float diag = smoothstep(0.0, 1.0, vUv.x * 0.7 + (1.0 - vUv.y) * 0.5);',
+    '  vec3 col = uCol * (0.35 + 0.65 * diag);',
+    '  float a = 0.045 + diag * 0.05 + grid + (edge * 0.95 + glow) * (0.55 + uFlash * 0.9);',
+    '  col = mix(col, vec3(1.0, 0.96, 0.88), uFlash * 0.55 * (edge + glow));',
+    '  float sweep = exp(-pow((fract(vUv.y * 0.9 - uFlash * 0.0 - uT * 0.04) - 0.5) * 9.0, 2.0)) * 0.05;',
+    '  a += sweep;',
+    '  vec4 tx = texture2D(uTex, vUv);',
+    '  col = mix(col, tx.rgb, tx.a * uFade);',
+    '  a = max(a * (0.35 + 0.65 * uFade), tx.a * uFade);',
+    '  gl_FragColor = vec4(col * a, a);',
+    '}'
+  ].join('\n');
+
+  function buildLayers(){
+    layerMeshes.forEach(function(m){ scene.remove(m); m.geometry.dispose(); m.material.uniforms.uTex.value.dispose(); m.material.dispose(); });
+    layerMeshes = [];
+    var W = PORT ? 7.0 : 13.0, H = PORT ? 11.2 : 7.3;
+    var cw = PORT ? 1120 : 2080, ch = Math.round(cw * H / W);
+    LAYERS.forEach(function(L, i){
+      var cv = mk(cw, ch, function(g){
+        g.clearRect(0, 0, cw, ch);
+        var m = PORT ? 84 : 150, px = cw / W;
+        g.textBaseline = 'alphabetic'; g.fillStyle = L.col;
+        g.font = '600 ' + (PORT ? 38 : 52) + 'px "Hanken Grotesk", sans-serif';
+        g.fillText('Layer ' + (i + 1) + ' of 5', m, PORT ? 270 : 330);
+        g.fillStyle = '#ecebe3';
+        g.font = '800 ' + (PORT ? 190 : 300) + 'px "Bricolage Grotesque", "Arial Narrow", sans-serif';
+        try { g.fontStretch = 'condensed'; } catch(e){}
+        g.fillText(L.name, m - 6, PORT ? 470 : 610);
+        g.fillStyle = 'rgba(236,235,227,.78)';
+        g.font = '400 ' + (PORT ? 44 : 56) + 'px "Hanken Grotesk", sans-serif';
+        wrap(g, L.text, m, PORT ? 580 : 735, PORT ? cw - m * 2 : cw * 0.5, PORT ? 62 : 76);
+      });
+      var mat = new THREE.ShaderMaterial({
+        transparent: true, depthWrite: false, side: THREE.DoubleSide, blending: THREE.CustomBlending,
+        blendSrc: THREE.OneFactor, blendDst: THREE.OneMinusSrcAlphaFactor, blendEquation: THREE.AddEquation,
+        uniforms: { uTex: { value: ctex(cv) }, uCol: { value: new THREE.Color(L.col) }, uFlash: { value: 0 }, uFade: { value: 0 }, uT: { value: 0 }, uW: { value: W }, uH: { value: H } },
+        vertexShader: layerVert, fragmentShader: layerFrag
+      });
+      var mesh = new THREE.Mesh(new THREE.PlaneGeometry(W, H), mat);
+      mesh.position.set(0, 0, LZ[i]); mesh.renderOrder = 2;
+      scene.add(mesh); layerMeshes.push(mesh);
+    });
+  }
+
+  /* the credential: a holographic card */
+  var CW = 3.4, CH = 1.7;
+  var card = new THREE.Group(); scene.add(card);
+  var cardUni = { uFront: { value: null }, uBack: { value: null }, uT: { value: 0 }, uHolo: { value: 1 }, uFlash: { value: 0 } };
+  var cardVert = 'varying vec2 vUv; varying vec3 vN, vWN, vV; void main(){ vUv = position.xy / vec2(' + CW.toFixed(2) + ', ' + CH.toFixed(2) + ') + 0.5; vN = normal; vec4 wp = modelMatrix * vec4(position, 1.0); vWN = normalize(mat3(modelMatrix) * normal); vV = cameraPosition - wp.xyz; gl_Position = projectionMatrix * viewMatrix * wp; }';
+  var cardFrag = [
+    'precision highp float; uniform sampler2D uFront, uBack; uniform float uT, uHolo, uFlash; varying vec2 vUv; varying vec3 vN, vWN, vV;',
+    'vec3 pal(float t){ return 0.5 + 0.5 * cos(6.28318 * (t + vec3(0.0, 0.14, 0.34))); }',
+    'void main(){',
+    '  vec2 uv = clamp(vUv, 0.0, 1.0); bool front = vN.z > 0.0;',
+    '  vec2 tuv = front ? uv : vec2(1.0 - uv.x, uv.y);',
+    '  vec4 tf = texture2D(uFront, tuv), tb = texture2D(uBack, tuv); vec4 tx = front ? tf : tb;',
+    '  vec3 wn = normalize(vWN); vec3 vd = normalize(vV);',
+    '  float ndv = abs(dot(wn, vd)); float fres = pow(1.0 - ndv, 2.2);',
+    '  float tilt = wn.x * 0.9 + wn.y * 0.5;',
+    '  vec3 base = mix(vec3(0.028, 0.04, 0.052), vec3(0.075, 0.095, 0.115), uv.y * 0.7 + uv.x * 0.25);',
+    '  vec2 cen = front ? vec2(0.84, 0.4) : vec2(0.5, 0.5);',
+    '  float r = length((uv - cen) * vec2(2.0, 1.0));',
+    '  float rings = 0.5 + 0.5 * sin(r * 150.0 - uT * 0.5);',
+    '  float pat = front ? smoothstep(0.25, 1.0, uv.x) * (0.3 + 0.7 * rings) * (1.0 - smoothstep(0.5, 1.15, r)) : (0.35 + 0.65 * rings) * (1.0 - smoothstep(0.15, 1.0, r));',
+    '  float hue = r * 0.55 + uv.x * 0.3 + tilt * 0.95 + fres * 0.9 + uT * 0.02;',
+    '  vec3 foil = pal(hue);',
+    '  float s = exp(-pow((fract(uv.x * 0.7 + uv.y * 0.3 - uT * 0.06 + tilt * 0.45) - 0.5) * 7.0, 2.0));',
+    '  vec3 col = base + foil * pat * 0.6 * uHolo + foil * fres * 0.4 + vec3(1.0, 0.9, 0.72) * s * 0.11;',
+    '  col = mix(col, tx.rgb * (0.82 + 0.5 * foil), tx.a);',
+    '  col += uFlash * vec3(0.9, 0.7, 0.4) * (0.2 + s * 0.5);',
+    '  gl_FragColor = vec4(col, 1.0);',
+    '}'
+  ].join('\n');
+  var faceMat = new THREE.ShaderMaterial({ uniforms: cardUni, vertexShader: cardVert, fragmentShader: cardFrag });
+  var sideMat = new THREE.ShaderMaterial({
+    uniforms: { uT: cardUni.uT },
+    vertexShader: 'varying vec3 vWN, vV; void main(){ vec4 wp = modelMatrix * vec4(position, 1.0); vWN = normalize(mat3(modelMatrix) * normal); vV = cameraPosition - wp.xyz; gl_Position = projectionMatrix * viewMatrix * wp; }',
+    fragmentShader: 'precision highp float; uniform float uT; varying vec3 vWN, vV; void main(){ float f = pow(1.0 - abs(dot(normalize(vWN), normalize(vV))), 1.4); vec3 dark = vec3(0.22, 0.15, 0.07), lite = vec3(0.98, 0.84, 0.58); float sw = 0.5 + 0.5 * sin(vWN.x * 6.0 + vWN.y * 4.0 + uT * 0.4); gl_FragColor = vec4(mix(dark, lite, clamp(f * 0.7 + sw * 0.5, 0.0, 1.0)), 1.0); }'
+  });
+  function rr(s, w, h, r){ var x = -w / 2, y = -h / 2; s.moveTo(x + r, y); s.lineTo(x + w - r, y); s.quadraticCurveTo(x + w, y, x + w, y + r); s.lineTo(x + w, y + h - r); s.quadraticCurveTo(x + w, y + h, x + w - r, y + h); s.lineTo(x + r, y + h); s.quadraticCurveTo(x, y + h, x, y + h - r); s.lineTo(x, y + r); s.quadraticCurveTo(x, y, x + r, y); }
+  var shape = new THREE.Shape(); rr(shape, CW - 0.05, CH - 0.05, 0.12);
+  var geo = new THREE.ExtrudeGeometry(shape, { depth: 0.045, bevelEnabled: true, bevelThickness: 0.012, bevelSize: 0.012, bevelSegments: 2, curveSegments: 14 });
+  geo.translate(0, 0, -0.0225);
+  var cardMesh = new THREE.Mesh(geo, [faceMat, sideMat]); card.add(cardMesh);
+
+  function drawCardTextures(){
+    var f = mk(2048, 1024, function(g, w, h){
+      g.clearRect(0, 0, w, h);
+      var gr = g.createLinearGradient(0, 0, w, h); gr.addColorStop(0, '#f6e2b4'); gr.addColorStop(.45, '#d6ac66'); gr.addColorStop(.7, '#f1d89d'); gr.addColorStop(1, '#b08645');
+      g.strokeStyle = 'rgba(233,185,112,.55)'; g.lineWidth = 3; g.beginPath(); if (g.roundRect) g.roundRect(64, 64, w - 128, h - 128, 28); else g.rect(64, 64, w - 128, h - 128); g.stroke();
+      g.fillStyle = gr; g.textBaseline = 'alphabetic';
+      g.font = '800 330px "Bricolage Grotesque", "Arial Narrow", sans-serif';
+      try { g.fontStretch = 'condensed'; } catch(e){}
+      g.fillText('DHRUV', 150, 560);
+      g.fillRect(156, 612, 240, 6);
+      g.fillStyle = 'rgba(236,235,227,.9)'; g.font = '500 46px "Hanken Grotesk", sans-serif';
+      g.fillText('Cloud security and AI security', 156, 718);
+      g.fillStyle = 'rgba(233,185,112,.8)'; g.font = '600 36px "Hanken Grotesk", sans-serif';
+      g.fillText('Lead Auditor, ISO/IEC 27001', 156, 152);
+      g.fillStyle = 'rgba(236,235,227,.55)'; g.font = '500 40px "Hanken Grotesk", sans-serif';
+      g.fillText('Pune, India', 156, h - 120);
+      g.strokeStyle = gr; g.lineWidth = 5; g.beginPath(); g.arc(w - 190, 190, 62, 0, Math.PI * 2); g.stroke();
+      g.fillStyle = gr; g.font = '800 70px "Bricolage Grotesque", sans-serif'; g.textAlign = 'center'; g.fillText('D', w - 190, 214); g.textAlign = 'left';
+    });
+    var b = mk(2048, 1024, function(g, w, h){
+      g.clearRect(0, 0, w, h);
+      var gr = g.createLinearGradient(0, 0, w, h); gr.addColorStop(0, '#f6e2b4'); gr.addColorStop(.5, '#d6ac66'); gr.addColorStop(1, '#b08645');
+      g.strokeStyle = 'rgba(233,185,112,.45)'; g.lineWidth = 3; g.beginPath(); if (g.roundRect) g.roundRect(64, 64, w - 128, h - 128, 28); else g.rect(64, 64, w - 128, h - 128); g.stroke();
+      g.fillStyle = gr; g.textAlign = 'center'; g.font = '800 340px "Bricolage Grotesque", sans-serif'; g.fillText('D', w / 2, h / 2 + 120);
+      g.font = '600 38px "Hanken Grotesk", sans-serif'; g.fillStyle = 'rgba(236,235,227,.7)';
+      g.fillText('Verified credential', w / 2, h - 130); g.textAlign = 'left';
+    });
+    cardFrontCv = f; cardBackCv = b;
+    cardUni.uFront.value = ctex(f); cardUni.uBack.value = ctex(b);
+  }
+
+  /* ---------- sizing ---------- */
+  var asp = 1;
+  function size(){
+    var w = innerWidth, h = innerHeight; R.setSize(w, h, false); asp = w / h;
+    cam.aspect = asp; var port = asp < 0.95;
+    cam.fov = port ? 66 : 50; cam.updateProjectionMatrix(); bgMat.uniforms.uAsp.value = asp;
+    if (port !== PORT){ PORT = port; if (cardUni.uFront.value) buildLayers(); }
+  }
+  addEventListener('resize', size);
+
+  /* ---------- pointer ---------- */
+  var mx = 0, my = 0, smx = 0, smy = 0;
+  addEventListener('pointermove', function(e){ mx = e.clientX / innerWidth * 2 - 1; my = e.clientY / innerHeight * 2 - 1; }, { passive: true });
+
+  /* ---------- scroll model ---------- */
+  var elHero = D.getElementById('hero'), elTun = D.getElementById('tunnel'), elWork = D.getElementById('work'), elPath = D.getElementById('experience'), elCon = D.getElementById('contact');
+  var track = D.getElementById('track'), projs = [].slice.call(track.children), wbar = D.getElementById('wbar');
+  var rail = D.getElementById('rail'), railItems = [].slice.call(rail.children);
+  var steps = D.getElementById('steps'), pline = D.getElementById('pline'), h1chars = [].slice.call(D.querySelectorAll('h1 .ch'));
+  function pin(el){ var r = el.getBoundingClientRect(); return { p: cl(-r.top / Math.max(1, r.height - innerHeight), 0, 1), r: r }; }
+
+  var intro = { k: 0 };          /* 0 -> 1 on load: the card turns up out of the dark */
+  var stops = [];                /* camera resting z for each layer, then the exit */
+  var DD = 7.5;
+  function recomputeStops(){ DD = PORT ? 11 : 7.5; stops = LZ.map(function(z){ return z + DD; }); stops.push(LZ[4] - 12); }
+  var warm = 0, camZ = 12, pose = { x: 0, y: 0, z: 0, s: 1, ry: 0, rx: 0, rz: 0 }, active = -1;
+  var tmpFlash = 0;
+
+  function frame(t){
+    var time = t / 1000;
+    size_check();
+    smx += (mx - smx) * 0.06; smy += (my - smy) * 0.06;
+    var vh = innerHeight;
+    var ph = pin(elHero), pt = pin(elTun), pw = pin(elWork), pc = elCon.getBoundingClientRect();
+    var rt = pt.r;
+    var heroP = ph.p, tunP = pt.p;
+    /* camera z through hero and tunnel */
+    var hz = lerp(12.5, stops[0], ease(rng(heroP, 0.0, 1.0)));
+    var cz;
+    if (rt.top > 0 || (heroP < 1 && tunP === 0)) cz = hz;
+    else {
+      var k = tunP * 5, i = Math.min(4, Math.floor(k)), f = k - i;
+      var mv = ease(rng(f, 0.4, 1.0));
+      cz = lerp(stops[i], stops[i + 1], mv);
+      if (tunP >= 1) cz = stops[5];
+    }
+    /* after the tunnel the camera keeps drifting forward a little */
+    var after = rt.bottom < vh ? rng(vh - rt.bottom, 0, vh * 6) : 0;
+    cz -= after * 10;
+    camZ += (cz - camZ) * 0.14;
+    cam.position.set(smx * 0.45 * (1 - rng(tunP, 0.0, 0.05) * 0.4), -smy * 0.25 + Math.sin(time * 0.35) * 0.08, camZ);
+    cam.lookAt(smx * 0.2, -smy * 0.1, camZ - 10);
+    cam.rotation.z = Math.sin(time * 0.2) * 0.012;
+
+    /* warm up the palette as the tunnel is crossed */
+    var wt = rt.top > 0 ? 0 : tunP;
+    warm += (wt - warm) * 0.08;
+    bgMat.uniforms.uWarm.value = warm; bgMat.uniforms.uT.value = time; bgMat.uniforms.uM.value.set(smx, smy);
+    pMat.uniforms.uT.value = time;
+    cardUni.uT.value = time;
+
+    /* layers: fade by distance, flash when the card passes through */
+    var cardZ = camZ - (PORT ? 3.6 : 4.2);
+    var act = -1, best = 1e9;
+    layerMeshes.forEach(function(m, i){
+      var dz = camZ - LZ[i];
+      var fade = ease(rng(dz, DD * 2.0, DD * 1.15)) * ease(rng(dz, 4.4, 6.8));
+      var pulse = Math.exp(-Math.pow((cardZ - LZ[i]) / 1.3, 2));
+      m.material.uniforms.uFade.value = fade * rng(heroP, 0.6, 1.0); m.material.uniforms.uFlash.value = pulse; m.material.uniforms.uT.value = time;
+      if (Math.abs(dz - DD) < best && dz > 0){ best = Math.abs(dz - DD); act = i; }
+    });
+    var inTun = rt.top < vh * 0.5 && rt.bottom > vh * 0.5;
+    rail.style.opacity = inTun ? '1' : '0';
+    if (act !== active){ active = act; railItems.forEach(function(s, i){ s.classList.toggle('on', i === act); }); }
+
+    /* card pose */
+    var half = Math.tan(cam.fov * Math.PI / 360);
+    var heroDist = 5.5, heroS = cl((half * heroDist * asp * 2 * 0.86) / CW, 0.42, 0.95);
+    var wide = asp > 1.05;
+    var tunS = PORT ? 0.46 : 0.72, distTun = PORT ? 3.6 : 4.2;
+    var toTun = ease(rng(heroP, 0.35, 1.0));
+    var dist = lerp(heroDist, distTun, toTun);
+    var s = lerp(heroS, tunS, toTun);
+    var fx = lerp(wide ? 0.42 : 0, wide ? 0.52 : 0, toTun), fy = lerp(wide ? 0.12 : 0.52, wide ? -0.12 : -0.6, toTun);
+    var ry = lerp(-0.42, -0.5, toTun), rx = 0.1, rz = 0;
+    /* in the tunnel it turns slowly so the foil moves */
+    var tw = rt.top <= 0 ? tunP * Math.PI * 6 : 0;
+    ry += Math.sin(tw * 0.5) * 0.5 + Math.sin(time * 0.6) * 0.06;
+    rx += Math.cos(tw * 0.5) * 0.12;
+    /* intro: turn up out of the dark */
+    var ik = easeOut(intro.k);
+    ry += (1 - ik) * -3.4; fy -= (1 - ik) * 0.2;
+    /* leave when the tunnel ends */
+    var leave = ease(rng(vh - rt.bottom, 0, vh * 0.7));
+    var sc = s * (1 - leave);
+    /* return at the end, large and facing the viewer */
+    var con = ease(rng(vh - pc.top, vh * 0.15, vh * 0.9));
+    if (rt.bottom < vh * 0.2 && con > 0){
+      sc = lerp(0, PORT ? 0.52 : 0.85, con);
+      dist = 6.2; fx = wide ? 0.46 : 0; fy = wide ? -0.12 : 0.74;
+      ry = lerp(-Math.PI * 1.2, -0.38, con) + Math.sin(time * 0.5) * 0.1; rx = 0.1 + Math.sin(time * 0.4) * 0.04;
+    }
+    var visible = sc > 0.004;
+    card.visible = visible;
+    if (visible){
+      var cx = cam.position.x, cy = cam.position.y;
+      card.position.set(cx + fx * half * dist * asp, cy + fy * half * dist, camZ - dist);
+      card.scale.setScalar(sc);
+      card.rotation.set(rx + smy * 0.14, ry + smx * 0.22, rz);
+      cardUni.uFlash.value = layerMeshes.length ? layerMeshes.reduce(function(a, m){ return Math.max(a, m.material.uniforms.uFlash.value); }, 0) * 0.5 : 0;
+    }
+
+    /* hero copy leaves as the card flies on */
+    var hp = D.querySelector('.hero-in'); hp.style.opacity = String(1 - rng(heroP, 0.1, 0.5)); hp.style.transform = 'translate3d(0,' + (-rng(heroP, 0, 0.5) * 6) + 'vh,0)';
+    D.querySelector('.cue').style.opacity = String(1 - rng(heroP, 0, 0.12));
+
+    /* work reel */
+    if (pw.r.bottom > -vh && pw.r.top < vh * 1.2){
+      var vw = innerWidth, kk = rng(pw.p, 0.04, 0.96);
+      var travel = Math.max(0, track.scrollWidth - vw + 8);
+      track.style.transform = 'translate3d(' + (-kk * travel) + 'px,0,0)';
+      projs.forEach(function(el){
+        var r = el.getBoundingClientRect(), off = (r.left + r.width / 2 - vw * 0.5) / vw, a = Math.min(1, Math.abs(off) * 1.5);
+        el.style.transform = 'rotateY(' + (-off * 22) + 'deg) scale(' + (1 - a * 0.1) + ')';
+        el.style.opacity = String(1 - a * 0.5);
+        el.style.setProperty('--px', (off * -70) + 'px');
+      });
+      wbar.style.transform = 'scaleX(' + kk + ')';
+    }
+    /* path line */
+    var sr = steps.getBoundingClientRect();
+    pline.style.strokeDashoffset = String(1 - cl((vh * 0.72 - sr.top) / Math.max(1, sr.height), 0, 1));
+
+    if (!(cutBusy && cutT < 6.8)) R.render(scene, cam);
+  }
+  var lastAsp = 0;
+  function size_check(){ if (innerWidth / innerHeight !== lastAsp){ lastAsp = innerWidth / innerHeight; size(); recomputeStops(); } }
+
+  /* ---------- opening cutscene: a man in a coat draws the card ---------- */
+  var cutEl = D.getElementById('cut'), cutT = 0, cutBusy = !!cutEl, cutG = null, cutLive = false, startSiteFn = null;
+  var cardFrontCv = null, cardBackCv = null, cardBake = null;
+  var dust = []; (function(){ var r = 7; function rnd(){ r = (r * 16807) % 2147483647; return r / 2147483647; } for (var i = 0; i < 64; i++) dust.push({ x: rnd(), y: rnd(), v: 0.004 + rnd() * 0.012, z: 0.5 + rnd() * 1.6, p: rnd() * 6 }); })();
+  var sparks = []; (function(){ var r = 11; function rnd(){ r = (r * 16807) % 2147483647; return r / 2147483647; }
+    for (var i = 0; i < 150; i++){ var gp = i < 30 ? 0 : i < 80 ? 1 : 2; sparks.push({ g: gp, tb: gp === 0 ? 3.42 + rnd() * 0.3 : gp === 1 ? 4.7 + rnd() * 1.0 : 6.15 + rnd() * 0.1, a: rnd() * 6.283, v: (gp === 2 ? 30 : 14) * (0.4 + rnd()), l: 0.5 + rnd() * 0.7, ox: rnd() - 0.5, oy: rnd() - 0.5 }); } })();
+  var noiseCv = (function(){ var c = D.createElement('canvas'); c.width = c.height = 128; var g = c.getContext('2d'), im = g.createImageData(128, 128); for (var i = 0; i < 128 * 128; i++){ var v = Math.random() * 255 | 0; im.data[i * 4] = v; im.data[i * 4 + 1] = v; im.data[i * 4 + 2] = v; im.data[i * 4 + 3] = 38; } g.putImageData(im, 0, 0); return c; })();
+  var ORB = ['ISO 27001', 'AWS AI', 'CNSP', 'CCI Scholar'];
+  var cE = function(x){ x = cl(x, 0, 1); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
+  var cIn = function(x){ x = cl(x, 0, 1); return x * x * x; };
+  var seg = function(t, a, b){ return cE(rng(t, a, b)); };
+
+  function bakeCard(){
+    /* the same card as the 3D one: black glass, brass foil lettering */
+    cardBake = D.createElement('canvas'); cardBake.width = 1536; cardBake.height = 768;
+    var g = cardBake.getContext('2d'), w = 1536, h = 768;
+    function rr(){ g.beginPath(); if (g.roundRect) g.roundRect(0, 0, w, h, 51); else g.rect(0, 0, w, h); }
+    g.save(); rr(); g.clip();
+    var bg = g.createLinearGradient(0, 0, w, h); bg.addColorStop(0, '#0c1519'); bg.addColorStop(.55, '#05090b'); bg.addColorStop(1, '#0b1215');
+    g.fillStyle = bg; g.fillRect(0, 0, w, h);
+    var iri = g.createLinearGradient(0, h, w, 0); iri.addColorStop(0, 'rgba(65,217,195,.10)'); iri.addColorStop(.5, 'rgba(233,185,112,.07)'); iri.addColorStop(1, 'rgba(122,169,255,.10)');
+    g.fillStyle = iri; g.fillRect(0, 0, w, h);
+    g.drawImage(cardFrontCv, 0, 0, w, h);
+    g.restore();
+    g.lineWidth = 3; g.strokeStyle = 'rgba(233,185,112,.55)'; g.save(); g.translate(1.5, 1.5); g.beginPath(); if (g.roundRect) g.roundRect(0, 0, w - 3, h - 3, 50); else g.rect(0, 0, w - 3, h - 3); g.stroke(); g.restore();
+    cardBack2 = D.createElement('canvas'); cardBack2.width = 1536; cardBack2.height = 768;
+    var b = cardBack2.getContext('2d');
+    b.save(); b.beginPath(); if (b.roundRect) b.roundRect(0, 0, w, h, 51); else b.rect(0, 0, w, h); b.clip();
+    b.fillStyle = bg; b.fillRect(0, 0, w, h); b.fillStyle = iri; b.fillRect(0, 0, w, h); b.drawImage(cardBackCv, 0, 0, w, h); b.restore();
+    b.lineWidth = 3; b.strokeStyle = 'rgba(233,185,112,.5)'; b.save(); b.translate(1.5, 1.5); b.beginPath(); if (b.roundRect) b.roundRect(0, 0, w - 3, h - 3, 50); else b.rect(0, 0, w - 3, h - 3); b.stroke(); b.restore();
+    cardFace = D.createElement('canvas'); cardFace.width = 1536; cardFace.height = 768; cardFaceG = cardFace.getContext('2d');
+  }
+  var cardBack2 = null, cardFace = null, cardFaceG = null;
+
+  /* two-bone arm: shoulder S, hand T, returns elbow */
+  function elbow(S, T, L1, L2, side){
+    var dx = T[0] - S[0], dy = T[1] - S[1], d = Math.max(0.01, Math.min(Math.hypot(dx, dy), L1 + L2 - 0.02));
+    var a = (L1 * L1 - L2 * L2 + d * d) / (2 * d), h = Math.sqrt(Math.max(0, L1 * L1 - a * a));
+    var ux = dx / Math.hypot(dx, dy || 1e-6), uy = dy / Math.hypot(dx, dy || 1e-6);
+    var px = S[0] + ux * a, py = S[1] + uy * a;
+    return [px + (-uy) * h * side, py + ux * h * side];
+  }
+
+  function cutFrame(){
+    var c = cutEl, g = cutG, W = c.width, H = c.height, t = cutT;
+    var PORTc = W / H < 0.95;
+    var s = PORTc ? Math.min(H * 0.0095, W / 58) : H * 0.0104;
+    var cx = W / 2, oy = PORTc ? (H - 100 * s) / 2 : H * 0.0;
+    var X = function(x){ return cx + x * s; }, Y = function(y){ return oy + y * s; };
+    var fade = seg(t, 0.0, 1.1);
+    var fl = t < 1.7 ? 0.72 + 0.28 * Math.sin(t * 47) * Math.sin(t * 13.7) : 1, hold0 = seg(t, 4.5, 5.7);
+    var shA = (t >= 6.15 ? Math.exp(-(t - 6.15) * 4.5) * 1.2 : 0) + (t >= 3.45 && t < 3.9 ? (1 - rng(t, 3.45, 3.9)) * 0.25 : 0) + (t >= 7.0 ? Math.exp(-(t - 7.0) * 6) * 1.1 : 0);
+    var shx = Math.sin(t * 91) * shA * s * 0.7, shy = Math.cos(t * 77) * shA * s * 0.55;
+    g.setTransform(1, 0, 0, 1, 0, 0);
+    g.globalAlpha = 1; g.globalCompositeOperation = 'source-over';
+    g.fillStyle = '#04090c'; g.fillRect(0, 0, W, H);
+
+    /* back wall: teal pool of light + venetian blind stripes */
+    var pool = g.createRadialGradient(cx, Y(38), 0, cx, Y(38), 62 * s);
+    pool.addColorStop(0, 'rgba(18,80,90,' + (0.62 * fade) + ')'); pool.addColorStop(.55, 'rgba(10,42,51,' + (0.4 * fade) + ')'); pool.addColorStop(1, 'rgba(4,9,12,0)');
+    g.fillStyle = pool; g.fillRect(0, 0, W, H);
+    /* faint stream of hex, like a log scrolling behind him */
+    (function(){
+      var cols = PORTc ? 9 : 24, fs = Math.max(10, s * 1.35), rows = 11;
+      g.font = '500 ' + fs + 'px "Courier New", monospace'; g.textAlign = 'center';
+      for (var ci = 0; ci < cols; ci++){
+        var xx = (ci + 0.5) * W / cols, sp = 0.05 + ((ci * 37) % 11) / 90, head = ((t * sp + ci * 0.173) % 1.4) * H * 1.15 - H * 0.1;
+        for (var rI = 0; rI < rows; rI++){
+          var yy = head - rI * fs * 1.25; if (yy < 0 || yy > H) continue;
+          var ch = '0123456789ABCDEF'.charAt(((ci * 7 + rI * 13 + Math.floor(t * 5) * (rI % 3 + 1)) >>> 0) % 16);
+          g.fillStyle = 'rgba(65,217,195,' + (0.16 * fade * (1 - rI / rows) * (rI === 0 ? 2 : 1)) + ')'; g.fillText(ch, xx, yy);
+        }
+      }
+      g.textAlign = 'left';
+    })();
+    g.save(); g.translate(cx, Y(40)); g.rotate(-0.30);
+    var st = seg(t, 0.2, 1.6) * 0.9 + 0.1;
+    for (var i = -16; i < 17; i++){
+      var yy = (i * 7.4 + (t * 0.9) % 7.4) * s;
+      var gr = g.createLinearGradient(-70 * s, 0, 70 * s, 0); gr.addColorStop(0, 'rgba(233,185,112,0)'); gr.addColorStop(.5, 'rgba(233,185,112,' + (0.085 * st) + ')'); gr.addColorStop(1, 'rgba(65,217,195,0)');
+      g.fillStyle = gr; g.fillRect(-70 * s, yy, 140 * s, 3.2 * s);
+    }
+    g.restore();
+    /* spot cone from above */
+    var cone = g.createLinearGradient(0, 0, 0, Y(100));
+    cone.addColorStop(0, 'rgba(246,226,180,' + (0.34 * fade * fl * (1 + 0.55 * hold0)) + ')'); cone.addColorStop(.6, 'rgba(233,185,112,' + (0.09 * fade * fl * (1 + 0.8 * hold0)) + ')'); cone.addColorStop(1, 'rgba(233,185,112,0)');
+    g.fillStyle = cone; g.beginPath(); g.moveTo(X(-5), -2); g.lineTo(X(5), -2); g.lineTo(X(36), Y(105)); g.lineTo(X(-36), Y(105)); g.closePath(); g.fill();
+    /* dust in the beam */
+    g.globalCompositeOperation = 'lighter';
+    dust.forEach(function(d){
+      var px = (d.x + Math.sin(t * 0.3 + d.p) * 0.02) * W, py = ((d.y + t * d.v) % 1) * H;
+      var inb = 1 - Math.min(1, Math.abs(px - cx) / (W * 0.3));
+      g.fillStyle = 'rgba(246,226,180,' + (0.5 * inb * fade * (0.6 + 0.4 * Math.sin(t * 2 + d.p))) + ')';
+      g.beginPath(); g.arc(px, py, d.z * Math.max(1, s * 0.12), 0, 6.283); g.fill();
+    });
+    g.globalCompositeOperation = 'source-over';
+
+    /* camera: a slow push on the head, then a lunge as the card is thrown */
+    var push = 1 + 0.05 * rng(t, 0, 6.2) + 0.14 * seg(t, 6.3, 7.2);
+    var rise = (1 - seg(t, 0.5, 2.0)) * 5;
+    g.save(); g.translate(cx, Y(51)); g.scale(push, push); g.translate(-cx + shx, -Y(51) + rise * s + shy);
+    var figA = seg(t, 0.5, 2.0) * (1 - 0.45 * seg(t, 6.4, 7.1));
+    g.globalAlpha = figA;
+
+    /* rim light gradient: brass on the left, verdigris on the right */
+    var rim = g.createLinearGradient(X(-28), 0, X(28), 0);
+    rim.addColorStop(0, 'rgba(233,185,112,.95)'); rim.addColorStop(.3, 'rgba(233,185,112,.16)'); rim.addColorStop(.7, 'rgba(65,217,195,.0)'); rim.addColorStop(1, 'rgba(65,217,195,.6)');
+    var body = g.createLinearGradient(0, Y(45), 0, Y(130)); body.addColorStop(0, '#081216'); body.addColorStop(1, '#030608');
+    var sleeve = g.createLinearGradient(X(-28), 0, X(28), 0); sleeve.addColorStop(0, '#0d1c21'); sleeve.addColorStop(.5, '#081215'); sleeve.addColorStop(1, '#0a161a');
+    function poly(pts, fill, stroke, lw){
+      g.beginPath(); g.moveTo(X(pts[0][0]), Y(pts[0][1])); for (var i = 1; i < pts.length; i++) g.lineTo(X(pts[i][0]), Y(pts[i][1])); g.closePath();
+      if (fill){ g.fillStyle = fill; g.fill(); } if (stroke){ g.strokeStyle = stroke; g.lineWidth = (lw || 0.5) * s; g.lineJoin = 'round'; g.stroke(); }
+    }
+    /* torso */
+    g.beginPath(); g.moveTo(X(-7), Y(49));
+    g.bezierCurveTo(X(-13), Y(52), X(-20), Y(53), X(-23), Y(62)); g.bezierCurveTo(X(-25), Y(76), X(-26), Y(100), X(-30), Y(150));
+    g.lineTo(X(30), Y(150)); g.bezierCurveTo(X(26), Y(100), X(25), Y(76), X(23), Y(62)); g.bezierCurveTo(X(20), Y(53), X(13), Y(52), X(7), Y(49)); g.closePath();
+    g.fillStyle = body; g.fill(); g.strokeStyle = rim; g.lineWidth = 0.55 * s; g.stroke();
+    /* shirt, tie */
+    poly([[-6.4, 50], [0, 68], [6.4, 50]], '#16303a');
+    poly([[-1.5, 52], [1.5, 52], [2.2, 58], [0, 74], [-2.2, 58]], '#3a2a14');
+    g.fillStyle = '#d6ac66'; g.fillRect(X(-0.9), Y(60.6), 1.8 * s, 0.7 * s);
+    /* relaxed arm on the right */
+    function arm(S, T, side, lw, fillc){
+      var E = elbow(S, T, 20, 20, side);
+      g.lineCap = 'round'; g.lineJoin = 'round';
+      g.strokeStyle = fillc; g.lineWidth = lw * s; g.beginPath(); g.moveTo(X(S[0]), Y(S[1])); g.lineTo(X(E[0]), Y(E[1])); g.lineTo(X(T[0]), Y(T[1])); g.stroke();
+      g.save(); g.translate(side < 0 ? -lw * 0.42 * s : lw * 0.42 * s, 0);
+      g.strokeStyle = side < 0 ? 'rgba(233,185,112,.5)' : 'rgba(65,217,195,.4)'; g.lineWidth = 0.5 * s; g.beginPath(); g.moveTo(X(S[0]), Y(S[1])); g.lineTo(X(E[0]), Y(E[1])); g.lineTo(X(T[0]), Y(T[1])); g.stroke(); g.restore();
+      return E;
+    }
+    poly([[-6.4, 50], [-14.5, 56], [-12.5, 67], [-8, 79], [-2, 67.5]], '#0b171b', 'rgba(233,185,112,.5)', 0.4);
+    poly([[6.4, 50], [14.5, 56], [12.5, 67], [8, 79], [2, 67.5]], '#081215', 'rgba(65,217,195,.4)', 0.4);
+    var sR = [-17.5, 59], sL = [17.5, 59];
+    arm(sL, [21, 97], -1, 9.4, sleeve);
+    g.fillStyle = '#05090b'; g.beginPath(); g.arc(X(21), Y(97.5), 2.8 * s, 0, 6.283); g.fill();
+
+    /* head, collar, hat */
+    g.fillStyle = '#05090b'; g.fillRect(X(-3.2), Y(40), 6.4 * s, 12 * s);
+    var hg = g.createLinearGradient(X(-7), 0, X(7), 0); hg.addColorStop(0, '#0c181d'); hg.addColorStop(.5, '#05090b'); hg.addColorStop(1, '#070e11');
+    g.fillStyle = hg; g.beginPath(); g.ellipse(X(0), Y(35.2), 6.1 * s, 7.6 * s, 0, 0, 6.283); g.fill();
+    g.strokeStyle = rim; g.lineWidth = 0.4 * s; g.stroke();
+    poly([[-6, 49.5], [-13.5, 44], [-11.5, 41.5], [-4.5, 46.5]], '#0e1d23', 'rgba(233,185,112,.55)', 0.4);
+    poly([[6, 49.5], [13.5, 44], [11.5, 41.5], [4.5, 46.5]], '#0b171b', 'rgba(65,217,195,.45)', 0.4);
+    /* fedora */
+    g.fillStyle = '#080e11'; g.beginPath(); g.ellipse(X(0), Y(30), 14.2 * s, 2.9 * s, 0, 0, 6.283); g.fill(); g.strokeStyle = rim; g.lineWidth = 0.45 * s; g.stroke();
+    g.beginPath(); g.moveTo(X(-7.9), Y(30)); g.bezierCurveTo(X(-8.4), Y(22), X(-5.8), Y(19.2), X(0), Y(19.6)); g.bezierCurveTo(X(5.8), Y(19.2), X(8.4), Y(22), X(7.9), Y(30)); g.closePath();
+    var hat = g.createLinearGradient(X(-8), 0, X(8), 0); hat.addColorStop(0, '#16292f'); hat.addColorStop(.55, '#070d10'); hat.addColorStop(1, '#0c181c');
+    g.fillStyle = hat; g.fill(); g.strokeStyle = rim; g.lineWidth = 0.45 * s; g.stroke();
+    g.fillStyle = '#4a361a'; g.beginPath(); g.moveTo(X(-8), Y(27.4)); g.quadraticCurveTo(X(0), Y(28.8), X(8), Y(27.4)); g.lineTo(X(7.95), Y(29.7)); g.quadraticCurveTo(X(0), Y(31), X(-7.95), Y(29.7)); g.closePath(); g.fill();
+    g.strokeStyle = 'rgba(7,12,14,.9)'; g.lineWidth = 0.6 * s; g.beginPath(); g.moveTo(X(-3.6), Y(20.9)); g.quadraticCurveTo(X(0), Y(23.4), X(3.6), Y(20.9)); g.stroke();
+    /* under-brim shadow */
+    var sh = g.createLinearGradient(0, Y(31), 0, Y(40)); sh.addColorStop(0, 'rgba(0,0,0,.85)'); sh.addColorStop(1, 'rgba(0,0,0,0)');
+    g.save(); g.beginPath(); g.ellipse(X(0), Y(35.2), 6.1 * s, 7.6 * s, 0, 0, 6.283); g.clip(); g.fillStyle = sh; g.fillRect(X(-7), Y(30), 14 * s, 10 * s); g.restore();
+
+    /* ----- the acting arm and the card ----- */
+    var rest = [-21, 97], pocket = [-6, 71];
+    var reach = seg(t, 2.0, 3.0), pull = seg(t, 3.35, 4.5), hold = seg(t, 4.5, 5.7), wind = seg(t, 5.7, 6.15), fly = rng(t, 6.15, 7.15), drop = seg(t, 6.25, 7.0);
+    /* card state */
+    var kh = Math.min(1.85, W * 0.82 / (26 * s));
+    var cd = { x: -5, y: 74, a: 88, k: 0.7, roll: -6 };
+    if (t >= 3.35){
+      cd.x = lerp(-5, -3, pull); cd.y = lerp(74, 51, pull); cd.a = lerp(88, 42, pull); cd.k = lerp(0.7, 1.05, pull); cd.roll = lerp(-6, -3, pull);
+    }
+    if (t >= 4.5){
+      var fl = Math.sin(t * 1.7) * 0.5;
+      cd.x = lerp(-3, 3, hold); cd.y = lerp(51, 59, hold) + fl * 0.5; cd.a = lerp(42, -9, hold); cd.k = lerp(1.05, kh, hold); cd.roll = lerp(-3, 2, hold);
+    }
+    if (t >= 5.7){
+      cd.x = lerp(3, 3, wind); cd.y = lerp(59, 60, wind); cd.a = lerp(-9, -16, wind); cd.k = lerp(kh, kh * 0.8, wind); cd.roll = lerp(2, 5, wind);
+    }
+    var kf = Math.max(2.2, (W * 1.22) / (26 * s));
+    var flyE = cIn(fly);
+    if (t >= 6.15){
+      cd.x = lerp(3, 0, cE(fly)); cd.y = lerp(60, (H / 2 - oy) / s, cE(fly));
+      cd.k = Math.exp(lerp(Math.log(kh * 0.8), Math.log(kf), flyE));
+      cd.a = lerp(-16, -376, Math.pow(fly, 0.8)); cd.roll = lerp(5, 0, cE(fly));
+    }
+    var cw = 26, ch = 13;
+    var rr = cd.roll * Math.PI / 180, ca = Math.cos(cd.a * Math.PI / 180);
+    /* hand grips the lower-left corner of the card */
+    var gx = -cw / 2 * 0.74 * ca * cd.k, gy = ch / 2 * 0.8 * cd.k;
+    var grip = [cd.x + gx * Math.cos(rr) - gy * Math.sin(rr), cd.y + gx * Math.sin(rr) + gy * Math.cos(rr)];
+    var hand = rest;
+    if (t < 3.35) hand = [lerp(rest[0], pocket[0], reach), lerp(rest[1], pocket[1], reach) + Math.sin(rng(t, 3.0, 3.35) * 3.14) * 0.6];
+    else if (t < 6.15) hand = [lerp(pocket[0], grip[0], 1) , lerp(pocket[1], grip[1], 1)];
+    if (t >= 3.35 && t < 3.6){ var q = rng(t, 3.35, 3.6); hand = [lerp(pocket[0], grip[0], q), lerp(pocket[1], grip[1], q)]; }
+    if (t >= 6.15) hand = [lerp(grip[0], rest[0], drop), lerp(grip[1], rest[1], drop)];
+    arm(sR, hand, 1, 9.6, sleeve);
+    /* hand: dark glove with a brass rim */
+    g.fillStyle = '#05090b'; g.beginPath(); g.arc(X(hand[0]), Y(hand[1]), 3.1 * s, 0, 6.283); g.fill();
+    g.strokeStyle = 'rgba(233,185,112,.55)'; g.lineWidth = 0.4 * s; g.beginPath(); g.arc(X(hand[0]), Y(hand[1]), 3.1 * s, Math.PI * 0.7, Math.PI * 1.45); g.stroke();
+    g.globalAlpha = 1;
+
+    function orbit(front){
+      var oa = seg(t, 4.6, 5.3) * (1 - seg(t, 5.8, 6.15)); if (oa <= 0.01) return;
+      var rx = Math.min(cw * cd.k * 0.5 + 9, (W * 0.47) / s), ry = 6.5, fs2 = Math.max(10, s * 1.8);
+      g.font = '700 ' + fs2 + 'px "Hanken Grotesk", sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
+      for (var oi = 0; oi < ORB.length; oi++){
+        var th = t * 1.5 + oi * Math.PI / 2, dep = Math.sin(th);
+        if ((dep >= 0) !== front) continue;
+        var ox = cd.x + Math.cos(th) * rx, oy = cd.y + dep * ry - 1, k2 = 0.82 + 0.22 * dep;
+        var tw = g.measureText(ORB[oi]).width * k2 + 2.4 * s, hh2 = fs2 * 1.7 * k2;
+        g.globalAlpha = oa * (0.55 + 0.45 * (dep * 0.5 + 0.5));
+        g.fillStyle = 'rgba(6,16,20,.86)'; g.strokeStyle = 'rgba(233,185,112,.75)'; g.lineWidth = Math.max(1, 0.3 * s);
+        g.beginPath(); if (g.roundRect) g.roundRect(X(ox) - tw / 2, Y(oy) - hh2 / 2, tw, hh2, hh2 / 2); else g.rect(X(ox) - tw / 2, Y(oy) - hh2 / 2, tw, hh2); g.fill(); g.stroke();
+        g.fillStyle = '#f6e2b4'; g.save(); g.translate(X(ox), Y(oy)); g.scale(k2, k2); g.fillText(ORB[oi], 0, 0); g.restore();
+      }
+      g.textAlign = 'left'; g.textBaseline = 'alphabetic'; g.globalAlpha = figA;
+    }
+    if (t > 4.6 && t < 6.2) orbit(false);
+    /* card, drawn as 3D strips so it can turn on its vertical axis */
+    var cardA = t < 3.3 ? 0 : 1;
+    if (cardA){
+      g.globalAlpha = 1;
+      var face = ca >= 0 ? cardBake : cardBack2;
+      cardFaceG.clearRect(0, 0, 1536, 768); cardFaceG.globalCompositeOperation = 'source-over'; cardFaceG.drawImage(face, 0, 0);
+      /* foil sheen sweeping across */
+      var sw = rng(t, 4.75, 5.75), sw2 = fly > 0 ? 0.5 + fly * 1.2 : sw;
+      var sx = lerp(-0.4, 1.4, sw2) * 1536;
+      cardFaceG.globalCompositeOperation = 'source-atop';
+      var sg = cardFaceG.createLinearGradient(sx - 300, 0, sx + 300, 768);
+      sg.addColorStop(0, 'rgba(65,217,195,0)'); sg.addColorStop(.35, 'rgba(65,217,195,.35)'); sg.addColorStop(.5, 'rgba(246,226,180,.6)'); sg.addColorStop(.65, 'rgba(255,122,69,.3)'); sg.addColorStop(1, 'rgba(255,122,69,0)');
+      var on = (t > 4.7 && t < 5.9) || fly > 0 ? 1 : 0; if (on){ cardFaceG.fillStyle = sg; cardFaceG.fillRect(0, 0, 1536, 768); }
+      cardFaceG.globalCompositeOperation = 'source-over';
+      g.save(); g.translate(X(cd.x), Y(cd.y)); g.rotate(rr);
+      /* glow behind the card */
+      var glow = g.createRadialGradient(0, 0, 0, 0, 0, cw * s * cd.k * 0.9);
+      glow.addColorStop(0, 'rgba(233,185,112,' + (0.18 * hold * (1 - fly)) + ')'); glow.addColorStop(1, 'rgba(233,185,112,0)');
+      g.fillStyle = glow; g.fillRect(-cw * s * cd.k, -cw * s * cd.k, 2 * cw * s * cd.k, 2 * cw * s * cd.k);
+      var N = 56, D0 = 95, ang = cd.a * Math.PI / 180, sn = Math.sin(ang), top = [], bot = [];
+      var wFace = ca >= 0 ? 1 : -1;
+      for (var j = 0; j <= N; j++){
+        var u = j / N, lx = (u - 0.5) * cw * cd.k;
+        var Xr = lx * ca, Zr = lx * sn, pp = D0 / (D0 - Zr);
+        top.push([Xr * pp, -ch / 2 * cd.k * pp]); bot.push([Xr * pp, ch / 2 * cd.k * pp]);
+      }
+      for (var j2 = 0; j2 < N; j2++){
+        var uu0 = ca >= 0 ? j2 / N : 1 - (j2 + 1) / N;
+        var x0 = top[j2][0] * s, x1 = top[j2 + 1][0] * s, y0 = top[j2][1] * s, y1 = top[j2 + 1][1] * s;
+        var dx = x1 - x0, hh = (bot[j2][1] - top[j2][1]) * s;
+        if (Math.abs(dx) < 0.01) continue;
+        var xl = Math.min(x0, x1);
+        g.drawImage(cardFace, uu0 * 1536, 0, 1536 / N, 768, xl, Math.min(y0, y1), Math.abs(dx) + 0.6, Math.abs(hh));
+      }
+      /* edge outline in brass */
+      g.strokeStyle = 'rgba(246,226,180,' + (0.35 + 0.5 * (1 - Math.abs(ca))) + ')'; g.lineWidth = Math.max(1, 0.28 * s);
+      g.beginPath(); g.moveTo(top[0][0] * s, top[0][1] * s); for (var j3 = 1; j3 <= N; j3++) g.lineTo(top[j3][0] * s, top[j3][1] * s);
+      g.lineTo(bot[N][0] * s, bot[N][1] * s); for (var j4 = N - 1; j4 >= 0; j4--) g.lineTo(bot[j4][0] * s, bot[j4][1] * s); g.closePath(); g.stroke();
+      g.restore(); g.globalAlpha = figA;
+    }
+    if (cardA && t < 6.45){
+      g.globalAlpha = 1 - seg(t, 6.2, 6.45); g.lineCap = 'round';
+      g.strokeStyle = '#05090b'; g.lineWidth = 2.3 * s; g.beginPath(); g.moveTo(X(hand[0]), Y(hand[1])); g.lineTo(X(hand[0] + 2.6), Y(hand[1] - 2.9)); g.stroke();
+      g.strokeStyle = 'rgba(233,185,112,.5)'; g.lineWidth = 0.35 * s; g.beginPath(); g.moveTo(X(hand[0] - 0.9), Y(hand[1] - 1.1)); g.lineTo(X(hand[0] + 1.7), Y(hand[1] - 4.0)); g.stroke();
+      g.globalAlpha = figA;
+    }
+    if (t > 4.6 && t < 6.2) orbit(true);
+    g.globalCompositeOperation = 'lighter';
+    sparks.forEach(function(sp){
+      var age = t - sp.tb; if (age < 0 || age > sp.l) return;
+      var life = 1 - age / sp.l, ox0, oy0;
+      if (sp.g === 0){ ox0 = -5; oy0 = 71; } else { ox0 = cd.x + sp.ox * cw * cd.k * (sp.g === 2 ? 0.2 : 0.95); oy0 = cd.y + sp.oy * ch * cd.k * (sp.g === 2 ? 0.2 : 0.95); }
+      var vx = Math.cos(sp.a) * sp.v, vy = Math.sin(sp.a) * sp.v - (sp.g === 1 ? 5 : 0);
+      var px = ox0 + vx * age, py = oy0 + vy * age + 7 * age * age;
+      g.strokeStyle = 'rgba(' + (sp.g === 1 ? '246,226,180' : '255,190,110') + ',' + (life * 0.9) + ')'; g.lineWidth = Math.max(1, 0.28 * s * (0.5 + life));
+      g.beginPath(); g.moveTo(X(px), Y(py)); g.lineTo(X(px - vx * 0.05), Y(py - vy * 0.05)); g.stroke();
+    });
+    g.globalCompositeOperation = 'source-over'; g.globalAlpha = figA;
+    /* left lapel hides the pocket while the hand reaches in, then lets the card pass in front */
+    g.globalAlpha = figA * (1 - seg(t, 3.9, 4.4));
+    poly([[-6.4, 50], [-14.5, 56], [-12.5, 67], [-8, 79], [-2, 67.5]], '#0b171b', 'rgba(233,185,112,.5)', 0.4);
+    g.restore();
+    g.globalAlpha = 1; g.globalCompositeOperation = 'lighter';
+    /* speed lines as the card is thrown */
+    if (t > 6.3 && t < 7.25){
+      var sq = Math.sin(rng(t, 6.3, 7.25) * Math.PI), mn = Math.min(W, H);
+      for (var li = 0; li < 54; li++){
+        var an = li * 2.399 + 0.3, r0 = mn * (0.12 + ((li * 53) % 17) / 40) * (0.6 + rng(t, 6.3, 7.1) * 2.2), r1 = r0 + mn * (0.18 + ((li * 29) % 13) / 30) * sq;
+        g.strokeStyle = 'rgba(246,226,180,' + (0.34 * sq * (0.35 + ((li * 11) % 7) / 10)) + ')'; g.lineWidth = 1 + (li % 3) * 0.8;
+        g.beginPath(); g.moveTo(cx + Math.cos(an) * r0, H / 2 + Math.sin(an) * r0); g.lineTo(cx + Math.cos(an) * r1, H / 2 + Math.sin(an) * r1); g.stroke();
+      }
+    }
+    /* shockwaves: one from the hand, one from the flash */
+    if (t > 6.15 && t < 7.0){ var ra = (t - 6.15) / 0.85; g.strokeStyle = 'rgba(233,185,112,' + (0.8 * (1 - ra)) + ')'; g.lineWidth = Math.max(1.5, 0.9 * s * (1 - ra)); g.beginPath(); g.arc(X(3), Y(60), ra * 70 * s, 0, 6.283); g.stroke(); }
+    if (t > 6.95 && t < 7.9){ var rb = (t - 6.95) / 0.95; g.strokeStyle = 'rgba(255,244,214,' + (0.9 * (1 - rb)) + ')'; g.lineWidth = Math.max(2, 3 * s * (1 - rb)); g.beginPath(); g.arc(cx, H / 2, rb * Math.max(W, H) * 0.9, 0, 6.283); g.stroke(); g.strokeStyle = 'rgba(65,217,195,' + (0.5 * (1 - rb)) + ')'; g.beginPath(); g.arc(cx, H / 2, rb * Math.max(W, H) * 0.78, 0, 6.283); g.stroke(); }
+    g.globalCompositeOperation = 'source-over';
+
+    /* low fog */
+    var fog = g.createLinearGradient(0, H * 0.7, 0, H); fog.addColorStop(0, 'rgba(18,80,90,0)'); fog.addColorStop(1, 'rgba(18,80,90,' + (0.28 * fade) + ')');
+    g.globalAlpha = 1; g.fillStyle = fog; g.fillRect(0, H * 0.7, W, H * 0.3);
+    /* vignette */
+    var vg = g.createRadialGradient(cx, H * 0.5, Math.min(W, H) * 0.35, cx, H * 0.5, Math.max(W, H) * 0.78);
+    vg.addColorStop(0, 'rgba(0,0,0,0)'); vg.addColorStop(1, 'rgba(0,0,0,.78)'); g.fillStyle = vg; g.fillRect(0, 0, W, H);
+    /* glitch tears on impact */
+    if ((t > 6.15 && t < 6.42) || (t > 6.98 && t < 7.14)){
+      var sd = Math.floor(t * 36);
+      for (var gi = 0; gi < 7; gi++){
+        var gy = ((sd * 97 + gi * 211) % 1000) / 1000 * H, gh = H * (0.015 + ((sd + gi * 5) % 7) / 100), gdx = (((sd * 31 + gi * 17) % 21) - 10) / 10 * W * 0.035;
+        g.drawImage(c, 0, gy, W, gh, gdx, gy, W, gh);
+      }
+    }
+    /* terminal readout: credentials being verified */
+    if (t > 4.8 && t < 6.3){
+      var lines = ['> verifying credential', '> iso/iec 27001 lead auditor ... ok', '> aws ai practitioner ........... ok', '> cnsp, secops group ............ ok', '> state dept cci scholar ........ ok', '> access granted'];
+      var hf = seg(t, 4.8, 5.0) * (1 - seg(t, 6.0, 6.3)), fz = Math.max(10, Math.min(s * 1.5, W / 38));
+      g.font = '500 ' + fz + 'px "Courier New", monospace'; g.textAlign = 'left'; g.globalAlpha = hf;
+      var shown = Math.floor((t - 4.8) * 4.2);
+      for (var hi = 0; hi < lines.length && hi <= shown; hi++){
+        g.fillStyle = hi === lines.length - 1 ? '#f6e2b4' : 'rgba(65,217,195,.85)'; g.fillText(lines[hi], W * 0.04, H - H * 0.075 + fz - (lines.length - hi) * fz * 1.5);
+      }
+      g.globalAlpha = 1;
+    }
+    /* film grain and letterbox */
+    g.globalAlpha = 0.9; g.fillStyle = g.createPattern(noiseCv, 'repeat'); g.save(); g.translate((Math.random() * 128) | 0, (Math.random() * 128) | 0); g.fillRect(-128, -128, W + 128, H + 128); g.restore(); g.globalAlpha = 1;
+    var lb = H * 0.075 * (1 - seg(t, 6.9, 7.5)); if (lb > 0.5){ g.fillStyle = '#000'; g.fillRect(0, 0, W, lb); g.fillRect(0, H - lb, W, lb); }
+    /* fade in from black */
+    g.fillStyle = 'rgba(4,9,12,' + (1 - fade) + ')'; g.fillRect(0, 0, W, H);
+    /* flash when the card fills the frame */
+    var fp = rng(t, 6.9, 7.45), fo = fp < 1 ? Math.sin(fp * Math.PI * 0.5) : 1 - rng(t, 7.45, 7.9);
+    if (t > 6.9 && fo > 0){
+      var fg = g.createRadialGradient(cx, H / 2, 0, cx, H / 2, Math.max(W, H) * 0.7);
+      fg.addColorStop(0, 'rgba(255,244,214,' + fo + ')'); fg.addColorStop(.6, 'rgba(233,185,112,' + (fo * 0.85) + ')'); fg.addColorStop(1, 'rgba(18,80,90,' + (fo * 0.7) + ')');
+      g.fillStyle = fg; g.fillRect(0, 0, W, H);
+    }
+  }
+
+  function cutSize(){
+    var dpr = Math.min(devicePixelRatio || 1, 1.75);
+    cutEl.width = Math.round(innerWidth * dpr); cutEl.height = Math.round(innerHeight * dpr);
+  }
+  function cutStart(done){
+    cutG = cutEl.getContext('2d'); cutSize(); addEventListener('resize', cutSize);
+    root.classList.add('cut'); if (lenis) lenis.stop();
+    cutLive = true; cutBusy = true; cutEl.style.display = 'block'; cutEl.style.opacity = '1'; cutT = 0; cutFrame();
+    var clock = { v: 0 };
+    var onTick = function(){ cutT = clock.v; cutFrame(); };
+    gsap.ticker.add(onTick);
+    var ctl = gsap.timeline({ onComplete: function(){
+      gsap.ticker.remove(onTick); removeEventListener('resize', cutSize);
+    } });
+    ctl.to(clock, { v: 7.9, duration: 7.9 / 1.08, ease: 'none' }, 0);
+    ctl.call(done, null, (7.35) / 1.08);
+    ctl.to(cutEl, { opacity: 0, duration: 0.85, ease: 'power2.inOut' }, (7.4) / 1.08);
+    ctl.call(function(){ cutEl.style.display = 'none'; cutBusy = false; cutLive = false; root.classList.remove('cut'); if (lenis) lenis.start(); }, null, (7.4) / 1.08 + 0.9);
+  }
+
+  /* ---------- go ---------- */
+  var fontsReady = Promise.race([
+    Promise.all([D.fonts.load('800 120px "Bricolage Grotesque"'), D.fonts.load('400 40px "Hanken Grotesk"'), D.fonts.load('600 40px "Hanken Grotesk"')]),
+    new Promise(function(r){ setTimeout(r, 3000); })
+  ]);
+  fontsReady.then(function(){
+    size(); recomputeStops(); drawCardTextures(); buildLayers();
+    gsap.ticker.add(function(){ frame(performance.now()); });
+    if (!lenis) gsap.ticker.fps(60);
+    function startSite(){
+      var tl = gsap.timeline({ delay: 0.05 });
+      tl.to(intro, { k: 1, duration: 2.6, ease: 'none' }, 0);
+      tl.from(h1chars, { yPercent: 118, duration: 1.25, ease: 'power4.out', stagger: 0.035 }, 0.35);
+      tl.from('.nav', { opacity: 0, y: -14, duration: 1, ease: 'power3.out' }, 0.7);
+      if (cutEl) tl.fromTo('#gl', { scale: 1.18 }, { scale: 1, duration: 2.4, ease: 'power3.out' }, 0);
+    }
+    startSiteFn = startSite;
+    function replay(){
+      if (cutLive) return;
+      if (lenis) lenis.scrollTo(0, { immediate: true, force: true }); scrollTo(0, 0);
+      intro.k = 0; cutStart(function(){ intro.k = 0; startSite(); });
+    }
+    if (cutEl){
+      bakeCard(); cutStart(startSite);
+      var lg = D.querySelector('.logo'); if (lg) lg.addEventListener('click', function(e){ e.preventDefault(); e.stopImmediatePropagation(); replay(); }, true);
+      var far = false;
+      addEventListener('scroll', function(){
+        if (cutLive) return;
+        if (scrollY > innerHeight * 1.5) far = true;
+        else if (far && scrollY < 4){ far = false; replay(); }
+      }, { passive: true });
+    } else startSite();
+  });
+})();
+</script>
 
 </body>
 </html>
